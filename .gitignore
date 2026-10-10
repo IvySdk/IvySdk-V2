@@ -17,5 +17,5 @@
 
 # Local Agent Memory data and Python caches; keep the empty-store placeholder.
 .agent-memory/
-*test/
+
 AGENTS.md
