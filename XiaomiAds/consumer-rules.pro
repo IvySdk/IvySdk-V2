@@ -1,0 +1,12 @@
+-keep class com.ivy.ads.XiaomiAds { *; }
+-keep class com.ivy.ads.XiaomiInit { *; }
+-keep class com.ivy.ads.XiaomiBannerAd { *; }
+-keep class com.ivy.ads.XiaomiInterstitialAd { *; }
+-keep class com.ivy.ads.XiaomiRewardedAd { *; }
+-keep class com.zeus.gmc.sdk.mobileads.** { *; }
+-keep class com.ot.pubsub.** { *; }
+-keep class com.iab.** { *; }
+-keep class oauth.signpost.** { *; }
+-keep class com.google.gdata.util.common.base.** { *; }
+-dontwarn com.xiaomi.market.IAppDownloadManager$Stub
+-dontwarn com.xiaomi.market.IAppDownloadManager

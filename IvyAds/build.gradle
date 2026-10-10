@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'signing'
+}
+apply {
+    from ('../upload.gradle')
+}
+android {
+    namespace 'com.ivy.ads'
+    compileSdk rootProject.ext.android.compileSdk
+
+    defaultConfig {
+        minSdk rootProject.ext.android.minSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            debuggable rootProject.ext.buildConfig.debug_debuggable
+//            jniDebuggable rootProject.ext.buildConfig.debug_jniDebuggable
+            minifyEnabled rootProject.ext.buildConfig.debug_minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled rootProject.ext.buildConfig.release_minifyEnabled
+            // shrinkResources rootProject.ext.buildConfig.release_shrinkResources
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    if (!isMavenCentral) {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+            }
+        }
+    }
+    buildFeatures {
+        buildConfig = true
+        aidl = true
+    }
+}
+
+dependencies {
+    debugApi project(':IvyBase')
+    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    implementation rootProject.ext.dependencies.androidx_appcompat
+    implementation rootProject.ext.dependencies.max
+    implementation rootProject.ext.dependencies.max_aps_adapter
+    implementation rootProject.ext.dependencies.max_aps
+    implementation rootProject.ext.dependencies.yandex
+    implementation rootProject.ext.dependencies.admob
+    implementation rootProject.ext.dependencies.mmkv
+    implementation rootProject.ext.dependencies.user_messaging_platform
+
+
+//    implementation "com.google.android.gms:play-services-ads:23.2.0"
+//    implementation project(':IvyBase')
+//    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+//    implementation 'com.applovin:applovin-sdk:13.0.0'
+//    implementation 'com.applovin.mediation:amazon-tam-adapter:9.10.2.0'
+//    implementation 'com.amazon.android:aps-sdk:9.10.2'
+//    implementation 'com.yandex.android:mobileads:6.3.0'
+//    implementation "com.google.android.gms:play-services-ads:23.2.0"
+//    implementation 'com.tencent:mmkv:1.3.14'
+}

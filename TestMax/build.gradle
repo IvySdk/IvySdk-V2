@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.match.meditation'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.match.meditation"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('com.bubblegame.bubbleshooterpop.keystore')
+            storePassword '123456'
+            keyAlias 'com.bubblegame.bubbleshooterpop'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.applovin:applovin-sdk:+'
+//    implementation 'com.applovin.mediation:amazon-tam-adapter:+'
+//    implementation 'com.amazon.android:aps-sdk:+'
+//    implementation 'com.applovin.mediation:bidmachine-adapter:+'
+//    implementation 'com.applovin.mediation:bigoads-adapter:+'
+//    implementation 'com.applovin.mediation:chartboost-adapter:+'
+//    implementation 'com.google.android.gms:play-services-base:16.1.0'
+//    implementation 'com.applovin.mediation:fyber-adapter:+'
+//    implementation 'com.applovin.mediation:google-ad-manager-adapter:+'
+//    implementation 'com.applovin.mediation:google-adapter:+'
+//    implementation 'com.applovin.mediation:hyprmx-adapter:+'
+//    implementation 'com.applovin.mediation:inmobi-adapter:+'
+//    implementation 'com.squareup.picasso:picasso:2.8'
+//    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+//    implementation 'com.applovin.mediation:ironsource-adapter:+'
+//    implementation 'com.applovin.mediation:vungle-adapter:+'
+//    implementation 'com.applovin.mediation:line-adapter:+'
+//    implementation 'com.applovin.mediation:maio-adapter:+'
+//    implementation 'com.applovin.mediation:facebook-adapter:+'
+//    implementation 'com.applovin.mediation:mintegral-adapter:+'
+//    implementation 'com.applovin.mediation:mobilefuse-adapter:+'
+//    implementation 'com.applovin.mediation:moloco-adapter:+'
+//    implementation 'com.applovin.mediation:ogury-presage-adapter:+'
+//    implementation 'com.applovin.mediation:bytedance-adapter:+'
+//    implementation 'com.applovin.mediation:pubmatic-adapter:+'
+//    implementation 'com.applovin.mediation:smaato-adapter:+'
+//    implementation 'com.applovin.mediation:unityads-adapter:+'
+//    implementation 'com.applovin.mediation:verve-adapter:+'
+//    implementation 'com.applovin.mediation:mytarget-adapter:+'
+//    implementation 'com.applovin.mediation:yandex-adapter:+'
+//    implementation 'com.applovin.mediation:yso-network-adapter:+'
+}

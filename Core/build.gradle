@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'signing'
+}
+apply {
+    from ('../upload.gradle')
+}
+android {
+    namespace 'com.ivy.core'
+    compileSdk rootProject.ext.android.compileSdk
+
+    defaultConfig {
+        minSdk rootProject.ext.android.minSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            debuggable rootProject.ext.buildConfig.debug_debuggable
+//            jniDebuggable rootProject.ext.buildConfig.debug_jniDebuggable
+            minifyEnabled rootProject.ext.buildConfig.debug_minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled rootProject.ext.buildConfig.release_minifyEnabled
+            // shrinkResources rootProject.ext.buildConfig.release_shrinkResources
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    if (!isMavenCentral) {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation rootProject.ext.dependencies.androidx_appcompat
+    compileOnly files('libs/unity3d.jar')
+//    implementation 'androidx.appcompat:appcompat:1.7.0'
+//    implementation "com.geyifeng.immersionbar:immersionbar:3.2.2"
+//    implementation "com.android.installreferrer:installreferrer:2.2"
+//    implementation "com.bytedance.applog:RangersAppLog-Lite-global:6.17.1"
+
+    debugApi project(':IvyGames')
+    releaseApi("$mavenGroupId:IvyGames:$mavenPublishVersion")
+    debugApi project(':IvyRemoteConfig')
+    releaseApi("$mavenGroupId:IvyRemoteConfig:$mavenPublishVersion")
+    debugApi project(':IvyTrack')
+    releaseApi("$mavenGroupId:IvyTrack:$mavenPublishVersion")
+    debugApi project(':IvyBase')
+    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+
+    implementation rootProject.ext.dependencies.androidx_appcompat
+    implementation rootProject.ext.dependencies.constraintlayout
+
+    implementation rootProject.ext.dependencies.installreferrer
+//    implementation rootProject.ext.dependencies.huoshan
+
+
+}

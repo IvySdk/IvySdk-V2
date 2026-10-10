@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutId="re"
+        android:shortcutLongLabel="@string/shortcut_long_label_1"
+        android:shortcutShortLabel="@string/shortcut_short_label_1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.ivy.test.MainActivity"
+            android:targetPackage="ai.lovvy.app">
+            <category android:name="android.intent.category.LAUNCHER" />
+            <extra
+                android:name="shortcut_action"
+                android:value="shortcut_action" />
+            <extra
+                android:name="shortcut_id"
+                android:value="1ree" />
+        </intent>
+    </shortcut>
+</shortcuts>

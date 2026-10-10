@@ -1,0 +1,2 @@
+-keep class com.ivy.ads.FacebookBK3** { *; }
+-keep class com.facebook.biddingkit.** { *; }

@@ -1,0 +1,197 @@
+{
+  "ads": {
+    "full": [
+      {
+        "p": {
+          "priority": 1,
+          "placement": "ca-app-pub-2959680549066287/7559923916"
+        },
+        "provider": "admob"
+      }
+    ],
+    "video": [
+      {
+        "p": {
+          "priority": 1,
+          "placement": "ca-app-pub-2959680549066287/6430675073"
+        },
+        "provider": "admob"
+      }
+    ],
+    "banner": [
+      {
+        "p": {
+          "adaptive": true,
+          "priority": 1,
+          "placement": "ca-app-pub-2959680549066287/5548521015"
+        },
+        "provider": "admob"
+      }
+    ],
+    "adConfig": {
+      "adLoadTimeOut": 10,
+      "delayOnLoadFail": 0,
+      "timesDelayOnLoadFail": 2,
+      "bannerAdRefreshDuration": 20000,
+      "bannerRefreshByPlatform": true
+    }
+  },
+  "gts": 1743382264000,
+  "push": [],
+  "appid": 2500,
+  "token": "4db25d18f37e6ca1dc6ecf703bed4837",
+  "track": {
+    "custom": {
+      "op": {
+        "expr": "1",
+        "count": [
+          2,
+          3,
+          5,
+          10
+        ],
+        "params": [
+          "sdk_app_open|>=0d1"
+        ],
+        "repeat": false
+      },
+      "ad_purchase": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.99|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_1": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.1|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_2": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.2|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_3": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.3|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_4": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.4|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_5": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.5|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_6": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.6|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_7": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.7|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_8": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue[af_revenue]++>0.8|>=0d1"
+        ],
+        "repeat": true
+      },
+      "video_shown_2_in1day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown[ad_format]=rewarded|>=1d2"
+        ],
+        "repeat": false
+      },
+      "video_shown_2_in3day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown[ad_format]=rewarded|>=3d2"
+        ],
+        "repeat": false
+      },
+      "interstitial_shown_2_in1day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown[ad_format]=interstitial|>=1d2"
+        ],
+        "repeat": false
+      },
+      "interstitial_shown_2_in3day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown[ad_format]=interstitial|>=3d2"
+        ],
+        "repeat": false
+      }
+    },
+    "orient": {},
+    "platform": {
+      "facebook": {
+        "enableAdPing": true,
+        "enablePurchasePing": true
+      },
+      "firebase": {
+        "enableAdPing": true,
+        "enablePurchasePing": true
+      },
+      "appsflyer": {
+        "app_key": "J6ejjnUP9fMkv29PqBuYzR",
+        "enableAdPing": true,
+        "enablePurchasePing": true,
+        "inviter_template_id": ""
+      }
+    }
+  },
+  "v_api": "2",
+  "domain": "",
+  "helper": {},
+  "uacApi": "https://hda2k62cp0.execute-api.us-west-1.amazonaws.com/top_user_advalue",
+  "payment": {
+    "key": "",
+    "checkout": {
+      "520": {
+        "usd": 1.99,
+        "repeat": 1,
+        "feename": "wu"
+      },
+      "521": {
+        "usd": 9.99,
+        "repeat": 1,
+        "feename": "wu1"
+      }
+    }
+  },
+  "gameServices": {
+    "google+": {
+      "auto_login": false,
+      "web_client_id": ""
+    },
+    "facebook": {},
+    "firebase": {},
+    "firestore": {}
+  },
+  "remoteConfig": {}
+}

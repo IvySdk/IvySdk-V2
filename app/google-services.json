@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "772994479077",
+    "firebase_url": "https://merge-142ea-default-rtdb.firebaseio.com",
+    "project_id": "merge-142ea",
+    "storage_bucket": "merge-142ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772994479077:android:d229e69b04f31245f1b50c",
+        "android_client_info": {
+          "package_name": "classic.sudoku.puzzle.woodensudoku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772994479077-6prlvkt8kf5c2nejitqh8lhqbkp86arb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "classic.sudoku.puzzle.woodensudoku",
+            "certificate_hash": "ff0007f799a54d2b3255b569a90fe793d58b68d8"
+          }
+        },
+        {
+          "client_id": "772994479077-l94oo6mcl6bqo3sl7dp0u4cceegnml7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDND1McPRV2jcTPLz3wMkPLr4_-FPlYXh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772994479077-l94oo6mcl6bqo3sl7dp0u4cceegnml7u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "772994479077-ori5k7456cclov3j3o6tvhem6laqf1c7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ivy.merge.ios",
+                "app_store_id": "1579489674"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-1914768831611213~1780975638"
+    }
+  ],
+  "configuration_version": "1"
+}
+

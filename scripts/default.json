@@ -1,0 +1,126 @@
+{
+  "v_api": 4,
+  "v_pub": 1,
+  "appid": 1000000872,
+  "mi": {
+    "debug": "false",
+    "ads": {
+      "banner": {
+        "default": {
+          "ids": [
+            {
+              "placeId": "1.335.2.1"
+            }
+          ]
+        }
+      },
+      "full": {
+        "passlevel": {
+          "ids": [
+            {
+              "placeId": "1.335.17.1"
+            }
+          ]
+        },
+        "passlevel1": {
+          "ids": [
+            {
+              "placeId": "1.335.17.1"
+            }
+          ]
+        },
+        "custom": {
+          "ids": [
+            {
+              "placeId": "1.335.17.1"
+            }
+          ]
+        }
+      },
+      "video": {
+        "default": {
+          "ids": [
+            {
+              "placeId": "1.335.29.1"
+            }
+          ]
+        }
+      },
+      "native": {
+        "loading": {
+          "ids": [
+            {
+              "placeId": "1.335.1.1"
+            }
+          ]
+        }
+      }
+    }
+  },
+    "payment": {
+      "0": {
+        "productId": "com.subway.princess.runner.migc1",
+        "title": "Buy 7500 Coins",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 100
+      },
+      "1": {
+        "productId": "com.subway.princess.runner.migc2",
+        "title": "Buy 18000 Coins",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 200
+      },
+      "2": {
+        "productId": "com.subway.princess.runner.migc3",
+        "title": "Buy 30000 Coins",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 300
+      },
+      "3": {
+        "productId": "com.subway.princess.runner.migc4",
+        "title": "Buy 45000 Coins",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 400
+      },
+      "4": {
+        "productId": "com.subway.princess.runner.migc5",
+        "title": "Buy 100000 Coins",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 500
+      },
+      "5": {
+        "productId": "com.subway.princess.runner.migc6",
+        "title": "Buy 10 Gems",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 100
+      },
+      "6": {
+        "productId": "com.subway.princess.runner.migc7",
+        "title": "Buy 25 Gems",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 200
+      },
+      "7": {
+        "productId": "com.subway.princess.runner.migc8",
+        "title": "Buy 80 Gems",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 300
+      },
+      "8": {
+        "productId": "com.subway.princess.runner.migc9",
+        "title": "Buy 300 Gems",
+        "currency": "USD",
+        "amount": "1",
+        "feeValue": 400
+      }
+    }
+  }
+}

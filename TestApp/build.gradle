@@ -1,0 +1,130 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.puzzlegames.puzzlebrickslegend'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.puzzlegames.puzzlebrickslegend"
+        minSdk 24
+        targetSdk 36
+        versionCode 277
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                parfkaUrl                  : 'http://gateway-3.hierugo.com',
+                ivy_debug                  : true,
+                din                        : true,
+                ivy_app_id                 : 2677,
+                ivy_notch                  : true,
+                parfka_appToken            : 'ap2677',
+                gms_games_app_id           : "",
+                gms_play_services_id       : "",
+                google_admob_application_id: 'ca-app-pub-1914768831611213~9943063227',
+                facebook_app_id            : '399035434011888',
+                facebook_client_token      : '52496f240311006305e44033afe1b012',
+                applovin_sdk_key           : 'E8pVhU9mykQd3y0TD0Ksoq4vpf_Muat6ifcP9m96UakTWk5klQaWEeQ2IPOA-GHgxu54eEA8pvgKcn2MBdtQGH',
+                aps_id                     : '800e3de9-2864-4c1b-b0c7-af59eea8f658',
+                ivy_splash                 : false
+        ]
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('com.puzzlegames.puzzlebrickslegend.keystore')
+            storePassword '123456'
+            keyAlias 'com.puzzlegames.puzzlebrickslegend'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        buildConfig = true
+        aidl = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation ("com.applovin.mediation:amazon-tam-adapter:11.1.1.0")
+    implementation ("com.amazon.android:aps-sdk:11.1.1")
+    implementation ("com.applovin.mediation:bidmachine-adapter:3.5.0.0")
+    implementation ("com.applovin.mediation:chartboost-adapter:9.10.2.0")
+    implementation ("com.google.android.gms:play-services-base:16.1.0")
+    implementation ("com.applovin.mediation:fyber-adapter:8.4.1.0")
+    implementation ("com.applovin.mediation:google-adapter:25.4.0.0")
+    implementation ("com.applovin.mediation:google-ad-manager-adapter:25.4.0.0")
+    implementation ("com.google.android.gms:play-services-base:16.1.0")
+    implementation ("com.applovin.mediation:inmobi-adapter:11.1.0.0")
+    implementation ("com.squareup.picasso:picasso:2.8")
+    implementation ("androidx.recyclerview:recyclerview:1.1.0")
+    implementation ("com.applovin.mediation:vungle-adapter:7.6.1.0")
+    implementation ("com.applovin.mediation:facebook-adapter:6.21.0.0")
+    implementation ("com.applovin.mediation:mintegral-adapter:17.0.31.0")
+    implementation ("com.applovin.mediation:moloco-adapter:4.7.0.0")
+    implementation ("com.pangle.global:pag-sdk-m:8.4.6.1"){ exclude group:"com.pangle.global", module:"tiktok-business-android-sdk-comp" }
+    implementation ("com.github.tiktok:tiktok-business-android-sdk:1.7.1")
+    implementation ("com.applovin.mediation:bytedance-adapter:8.3.0.3.0"){ exclude group:"com.pangle.global", module:"pag-sdk" }
+    implementation ("com.applovin.mediation:pubmatic-adapter:4.10.0.0")
+    implementation ("com.applovin.mediation:smaato-adapter:22.7.2.3")
+    implementation ("com.applovin.mediation:unityads-adapter:4.18.1.0")
+    implementation ("com.applovin.mediation:verve-adapter:3.7.1.0")
+    implementation ("com.applovin.mediation:yandex-adapter:7.17.0.0")
+    implementation ("com.adsurge.sdk:adapter-for-max:1.9.0.0")
+
+    implementation project(':Core')
+//    implementation project(':EnjoyPay')
+//    implementation project(':PlayGames')
+//    implementation project(':AdmobAds')
+    implementation project(':MaxAds')
+    implementation project(':MspAds')
+//    implementation project(':IvyBase')
+//    implementation project(':IvyAds')
+//    implementation project(':AIHelp')
+//    implementation project(':Facebook')
+//    implementation project(':GooglePay')
+//    implementation project(':ThinkingData')
+//    implementation project(':Appsflyer')
+//    implementation project(':Firebase')
+//    implementation project(':CloudX')
+//    implementation project(':YandexAds')
+//    implementation ("io.cloudx:adapter-meta:2.2.1")
+//    implementation ("io.cloudx:adapter-vungle:2.2.1")
+//    implementation ("io.cloudx:adapter-inmobi:2.2.1")
+//    implementation ("io.cloudx:adapter-mintegral:2.2.1")
+//    implementation ("io.cloudx:adapter-unity:2.2.1")
+    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
+    implementation("com.google.firebase:firebase-crashlytics")
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

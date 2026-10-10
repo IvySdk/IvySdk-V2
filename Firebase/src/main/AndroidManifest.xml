@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<!--    <provider-->
+<!--        android:name="com.google.firebase.provider.FirebaseInitProvider"-->
+<!--        android:authorities="${applicationId}.firebaseinitprovider"-->
+<!--        tools:node="remove"/>-->
+
+
+    <application>
+
+        <!-- 禁用firebase 自启动 -->
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_performance_collection_enabled"
+            android:value="false" />
+<!--        <meta-data-->
+<!--            android:name="firebase_crashlytics_collection_enabled"-->
+<!--            android:value="false" />-->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            tools:node="remove" />
+
+        <!-- 禁用firebase sessions -->
+        <meta-data
+            android:name="firebase_sessions_enabled"
+            android:value="false"/>
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+            tools:node="remove" />
+
+        <service
+            android:name=".FirebaseCloudMessageService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- 关键：预设默认的 Channel ID -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="notice_channel" />
+    </application>
+</manifest>

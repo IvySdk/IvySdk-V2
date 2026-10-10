@@ -1,0 +1,15 @@
+{
+  "system_name": "sdk",
+  "platform": "android",
+  "release_type": "major",
+  "status": "published",
+  "region": "offshore",
+  "channel": "google_play",
+  "version_name": "10.0.21"
+}
+//published
+//system_name 传sdk
+//platform 传android ios
+//version_name 传版本号
+//channel [google_play apple_store oppo vivo xiaomi chuanyin huawei samsung motor zhuoyi]
+//region offshore-离岸；onshore-在岸；也可为国家代码

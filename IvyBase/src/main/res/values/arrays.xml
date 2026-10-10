@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="value_types">
+        <item>String</item>
+        <item>Long</item>
+        <item>Double</item>
+        <item>Boolean</item>
+    </string-array>
+
+</resources>

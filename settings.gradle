@@ -1,0 +1,60 @@
+pluginManagement {
+    buildscript {
+        repositories {
+            google()
+            mavenCentral()
+        }
+        dependencies {
+            classpath 'com.android.tools:r8:9.4.14'
+        }
+    }
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+include ':app'
+
+//include ':parfka'
+////include ':tradplus'
+//
+////project(':adsfallsdk').projectDir = new File('ivysdk-core')
+//project(':parfka').projectDir = new File('/Users/dingjiansheng/workspace/parfka-android/parfka')
+
+//include ':googlebannerrefresh'
+
+include ':PlayGames'
+include ':IvyBase'
+include ':Facebook'
+include ':IvyGames'
+include ':Firebase'
+include ':IvyTrack'
+include ':TestApp'
+include ':Appsflyer'
+include ':ThinkingData'
+include ':IvyRemoteConfig'
+include ':AIHelp'
+include ':GooglePay'
+include ':BlastAds'
+include ':IvyAds'
+include ':AdStrategy'
+include ':Core'
+include ':TestMax'
+include ':MspAds'
+include ':AdmobAdManager'
+include ':MaxAds'
+include ':AdmobAds'
+include ':XiaomiAds'
+include ':AdmobAps'
+include ':YandexAds'
+include ':Axon'
+include ':CloudX'
+include ':PangleAds'
+include ':AdmobNextAds'
+include ':FacebookBK3'
+include ':CrossPromotion'
+include ':EnjoyPay'
+include ':AdStrategy'
+include ':tradplus'

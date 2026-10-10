@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ivy_cross_promotion_ad">Ad</string>
+    <string name="ivy_cross_promotion_close">Close</string>
+    <string name="ivy_cross_promotion_close_symbol">×</string>
+    <string name="ivy_cross_promotion_install">Install</string>
+    <string name="ivy_cross_promotion_opening">Opening…</string>
+    <string name="ivy_cross_promotion_opening_failed">Opening failed</string>
+</resources>

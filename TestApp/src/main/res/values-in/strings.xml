@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <string name="shortcut_short_label_1">1_short_label</string>
+    <string name="shortcut_long_label_1">1_long_label</string>
+
+    <string name="shortcut_short_label_2">2_short_label</string>
+    <string name="shortcut_long_label_2">2_long_label</string>
+
+</resources>

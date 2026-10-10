@@ -1,0 +1,3 @@
+-keep class com.yandex.div.** { *; }
+-keep class com.yandex.div2.** { *; }
+-keep class * implements com.ivy.base.IUnProguard

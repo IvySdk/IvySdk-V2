@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'signing'
+}
+
+apply {
+    from ('../upload.gradle')
+}
+
+android {
+    namespace 'com.ivy.adstrategy'
+    compileSdk rootProject.ext.android.compileSdk
+
+    defaultConfig {
+        minSdk rootProject.ext.android.minSdk
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            debuggable rootProject.ext.buildConfig.debug_debuggable
+            minifyEnabled rootProject.ext.buildConfig.debug_minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled rootProject.ext.buildConfig.release_minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    if (!isMavenCentral) {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+            }
+        }
+    }
+}
+
+dependencies {
+    debugApi project(':IvyBase')
+    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+}

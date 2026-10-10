@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "162964342211",
+    "project_id": "ivy-color-block",
+    "storage_bucket": "ivy-color-block.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162964342211:android:b7c7c9b95b97c23fa1a976",
+        "android_client_info": {
+          "package_name": "com.puzzlegames.puzzlebrickslegend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPdfZ3sliZXcpU0_z7mvEpd34KK7CXFsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

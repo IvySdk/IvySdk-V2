@@ -1,0 +1,25 @@
+apply plugin: 'maven'
+
+
+version '9.2.1'
+
+project.group 'com.ivycache'
+
+artifacts {
+    archives file: file('aps-sdk.aar')
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = "com.ivycache"
+            pom.version='9.2.1'
+            pom.artifactId='aps'
+            pom.packaging='aar'
+
+            repository(url: nexusUrl) {
+                authentication(userName: nexusUserName, password: nexusPassword)
+            }
+        }
+    }
+}

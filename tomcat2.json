@@ -1,0 +1,787 @@
+{
+    "fullPageAdProviders": [
+        {"id": "admob-passlevel", "provider": "admob", "p" : {"placement": ""}}
+    ],
+    "adRewardsProviders": [
+    ],
+    "adLoadTimeout": 10,
+    "adRefreshInterval": 20,
+    "adProviderWeights": [
+        0,
+        0
+    ],
+    "adParallelRequests": 1,
+    "adParallelWaitTime": 5,
+    "dontShowFullPageAdsOnSlowConnection": false,
+    "adFullScreenTimespan": 120,
+    "ad": {
+        "adNextLoadInterval": 15,
+        "timeToWaitForAdToShowSeconds": 5,
+        "updateBanner": [],
+        "s2sTemplateURLs": "https://cdn.outfit7.cn/s2s/templates/",
+        "o7Interstitials": {
+            "channelId": "GameOver",
+            "url": "https://apps.outfit7.com/rest/ad/v1/interstitials/Android",
+            "sequence": [
+                3,
+                10
+            ]
+        },
+        "adDelayFirstInterstitialCallSec": 30,
+        "adProvidersRefreshInMinutes": 60,
+        "useBannerFingerPrinting": true,
+        "useVideoClipPreloading": true,
+        "rewardedClipsCaps": {
+            "*": {
+                "intervalHours": 24,
+                "maxImpressions": 4
+            }
+        },
+        "s2SC": {
+            "aV": "1.0.0",
+            "aN": "com.outfit7.talkingtomgoldrun"
+        },
+        "iLTS": 10,
+        "bLTS": 10,
+        "aC": {
+            "iTs": [
+                20,
+                120
+            ],
+            "iPTs": [
+                0,
+                60
+            ],
+            "fIPT": 5,
+            "fIPSS": 2,
+            "iSTs": [
+                {
+                    "f": "*",
+                    "t": "*"
+                }
+            ]
+        }
+    },
+    "ip": "36.7.84.7",
+    "clientCountryCode": "CN",
+    "androidImageShare": [
+        "GALLERY",
+        "GMAIL:com.google.android.gm",
+        "MAIL:com.android.email",
+        "MAIL:com.htc.android.mail",
+        "MAIL:com.amazon.email",
+        "MAIL:com.motorola.blur.email",
+        "TW:com.twitter.android",
+        "GPLUS:com.google.android.apps.plus",
+        "WA:com.whatsapp",
+        "KT:com.kakao.talk",
+        "CYW:com.btb.minihompy",
+        "SW:com.sina.weibo",
+        "TC:com.tencent.WBlog",
+        "VR:com.viber.voip",
+        "RR::HC",
+        "RR:com.renren.mobile.android",
+        "QZ:com.qzone",
+        "MMS:com.android.mms",
+        "MMS:com.sonyericsson.conversations",
+        "MMS:com.motorola.blur.conversations",
+        "MMS:com.motorola.messaging",
+        "MMS:com.sec.android.mms.kor",
+        "MMS:com.sec.mms",
+        "MMS"
+    ],
+    "androidVideoShare": [
+        "GALLERY",
+        "GMAIL:com.google.android.gm",
+        "MAIL:com.android.email",
+        "MAIL:com.htc.android.mail",
+        "MAIL:com.amazon.email",
+        "MAIL:com.motorola.blur.email",
+        "MMS:com.android.mms",
+        "MMS:com.sonyericsson.conversations",
+        "MMS:com.motorola.blur.conversations",
+        "MMS:com.motorola.messaging",
+        "MMS:com.sec.android.mms.kor",
+        "MMS",
+        "RINGTONE",
+        "WA:com.whatsapp",
+        "KT:com.kakao.talk",
+        "GPLUS:com.google.android.apps.plus",
+        "YK:com.youku.phone",
+        "YK:com.youku.phone.samsung.market",
+        "TW:com.seesmic.pro",
+        "TW:com.seesmic",
+        "TW:com.twidroid",
+        "TW:jp.r246.twicca",
+        "TW:com.twitvid.android",
+        "VR:com.viber.voip"
+    ],
+    "aboutFBUrl": "https://m.facebook.com/profile.php?id=%s",
+    "aboutTWUrl": "https://mobile.twitter.com/outfit7",
+    "pnp": "https://apps.outfit7.com/rest/misc/push-token/v1/users/",
+    "firstInstall": false,
+    "subscribedPush": false,
+    "iapuPacks": [
+        {
+            "id": "pushRegister",
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 200
+                }
+            ]
+        },
+        {
+            "id": "com.outfit7.talkingtomgoldrun.dynamite.pack",
+            "items": [
+                {
+                    "name": "dynamite",
+                    "amount": 18
+                }
+            ]
+        },
+        {
+            "id": "com.outfit7.talkingtomgoldrun.dynamite.batch",
+            "items": [
+                {
+                    "name": "dynamite",
+                    "amount": 250
+                }
+            ]
+        },
+        {
+            "id": "com.outfit7.talkingtomgoldrun.dynamite.pile",
+            "items": [
+                {
+                    "name": "dynamite",
+                    "amount": 650
+                }
+            ]
+        },
+        {
+            "id": "com.outfit7.talkingtomgoldrun.dynamite.box",
+            "items": [
+                {
+                    "name": "dynamite",
+                    "amount": 1400
+                }
+            ]
+        },
+        {
+            "id": "com.outfit7.talkingtomgoldrun.dynamite.crate",
+            "items": [
+                {
+                    "name": "dynamite",
+                    "amount": 4500
+                }
+            ]
+        },
+        {
+            "id": "com.outfit7.talkingtomgoldrun.dynamite.truck",
+            "items": [
+                {
+                    "name": "dynamite",
+                    "amount": 16500
+                }
+            ]
+        },
+        {
+            "id": "SupersonicClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "VungleClips-2nd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "AdMobClips-2nd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "s2s:inmobi",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "UCClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "IqzoneClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "ChartboostClips-2nd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "mobvistaclips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "ChartboostClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "SuperawesomeClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "AdMobClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "InmobiClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "VungleClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "IqzoneClips-2nd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "LetvClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "ApplifierClips-2nd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "s2s:fyber",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "s2s:loopme",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "SmaatoClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "ApplovinClips-2nd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "applifierclips-3rd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "ApplifierClips",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "s2s:mpoint",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "id": "SupersonicClips-2nd",
+            "price": 0,
+            "items": [
+                {
+                    "name": "bar-gold",
+                    "amount": 1
+                }
+            ]
+        }
+    ],
+    "news": {
+        "newsId": 28969,
+        "fullScreenNewsHtmlUrl": "https://cdn.outfit7.cn/promo-nc/v25/index.html?news=ttb%2Ftired3-s-nobutton%2Cginger2%2Fwhistle-a-blue%2Cjigty%2Fsummer-s-red%2Ctom%2Ficecream-s-red%2Cmtt%2Fjustminigames-s-green&adIds=28969,28655,28707,28712,30418&appId=com.outfit7.talkingtomgoldrun&appVersion=1.0.0&ns=news&gplay=false&lc=zh&lv=12.11.16&wifi=false&platform=android&rpx=false&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&ts=1553667242298&w=1080&h=1920&ssc=1.0&ssf=2%2C440&bld=free&containerId=v25,ucb2-alg&os=6.0.1&sc=6GaO,kgDX,lYG5,eY7Q,qvaX&si=CglM,-ww3,Qn_r,R3q2,mNyT&button=%E4%B8%8D%EF%BC%8C%E8%B0%A2%E8%B0%A2%0A%E5%85%8D%E8%B4%B9%E7%8E%A9%0A%E5%85%8D%E8%B4%B9%E7%8E%A9%0A%E5%85%8D%E8%B4%B9%E7%8E%A9%0A%E5%85%8D%E8%B4%B9%E7%8E%A9&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&wP=false",
+        "timestamp": 1553667242299,
+        "advertisedAppIdForClient": "com.outfit7.tomsbubbles",
+        "requiredConnectivity": "any",
+        "backButtonActsAsCloseButton": true
+    },
+    "infoShopUrl": "https://talkingfriends.com",
+    "newsContainerSha1": "ca3b3e09e44bdcdbe92a962564fc89de2b1aaa8c",
+    "cmads": false,
+    "ageScreen": false,
+    "adsAgeGateOptIn": true,
+    "adLabel": false,
+    "rateAppUrl": "market://details?id=com.outfit7.talkingtomgoldrun",
+    "activeEventGroups": [
+        "ads-show",
+        "connectivity",
+        "user-info",
+        "error",
+        "notification-remote",
+        "game-info"
+    ],
+    "videoGalleryRedirectUrl": "https://cdn.outfit7.cn/vg/yk/live/v3/play.html?v=XNDEwNDU4OTU2OA==&wifi=1&platform=android&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&cc=CN&appId=com.outfit7.talkingtomgoldrun&appVersion=1.0.0&bH=apps.outfit7.com&o7internal",
+    "interstitialTimeout": [
+        20,
+        120
+    ],
+    "ext": {
+        "videoClipsPerRace": 10,
+        "rNV": "static",
+        "ps": [],
+        "rVCo": {
+            "fVUE": true,
+            "vC": {
+                "vO": 3,
+                "tLT": 1
+            },
+            "yC": {
+                "dC": 2,
+                "c": 360
+            },
+            "cC": {
+                "dC": 2,
+                "c": 30,
+                "mU": 14,
+                "uC": 1
+            },
+            "dBC": {
+                "dC": 999,
+                "c": 0,
+                "mDbs": 1,
+                "mDbas": 999999
+            }
+        },
+        "aAPCs": [],
+        "bIs": [],
+        "vS": {
+            "p": 2000,
+            "pVP": 149,
+            "cT": 10800,
+            "vO": 86400,
+            "sUP": 36,
+            "mV": 4,
+            "pPV": 4,
+            "mT": 0,
+            "pPM": 60,
+            "fV": 21600
+        },
+        "dER": 44,
+        "dIR": 54,
+        "sC": [
+            {
+                "p": 5,
+                "wV": true
+            },
+            {
+                "p": 10,
+                "wV": true
+            },
+            {
+                "p": 20,
+                "wV": true
+            },
+            {
+                "p": 40,
+                "wV": true
+            },
+            {
+                "p": 80,
+                "wV": true
+            },
+            {
+                "p": 160,
+                "wV": true
+            },
+            {
+                "p": 320,
+                "wV": true
+            },
+            {
+                "p": 640,
+                "wV": true
+            },
+            {
+                "p": 1280,
+                "wV": true
+            }
+        ],
+        "rVC": 100,
+        "rVCP": 1,
+        "sMV": "dynamite_video",
+        "fSP": 500,
+        "iC": [
+            {
+                "c": "dynamite",
+                "a": 399,
+                "id": "com.outfit7.talkingtomgoldrun.unlock.angela"
+            },
+            {
+                "c": "dynamite",
+                "a": 799,
+                "id": "com.outfit7.talkingtomgoldrun.unlock.hank"
+            },
+            {
+                "c": "dynamite",
+                "a": 1599,
+                "id": "com.outfit7.talkingtomgoldrun.unlock.ginger"
+            },
+            {
+                "c": "dynamite",
+                "a": 1999,
+                "id": "com.outfit7.talkingtomgoldrun.unlock.ben"
+            },
+            {
+                "c": "dynamite",
+                "a": 3999,
+                "id": "com.outfit7.talkingtomgoldrun.unlock.tom2"
+            },
+            {
+                "c": "dynamite",
+                "a": 3999,
+                "id": "com.outfit7.talkingtomgoldrun.unlock.angela2"
+            }
+        ],
+        "bBC": [
+            {
+                "iU": "https://cdn.outfit7.cn/apps/goldrun/builder-banner/001-MTT-BuilderBanner_zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=346&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242208&s=a7a7defe12ee5295a76825fcc5b8c2850efa6e31",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=346&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242208&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=881baa7386ecd0f7f86544969d5f493824015b68",
+                "aU": "https://cdn.outfit7.cn/apk/mtt/MyTalkingTom-free-4.5.1.apk",
+                "aI": "com.outfit7.mytalkingtomfree",
+                "yI": "yard_tom"
+            },
+            {
+                "iU": "https://cdn.outfit7.cn/apps/goldrun/builder-banner/001-MTA-BuilderBanner_zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=347&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242209&s=a70f5b57fe2bb7397628545aff158487dac69ca6",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=347&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242208&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=0031a9966e7890fabc39f77ba753646facb1bd3b",
+                "aU": "https://cdn.outfit7.cn/apk/mta/MyTalkingAngela-free-3.4.1.apk",
+                "aI": "com.outfit7.mytalkingangelafree",
+                "yI": "yard_angela"
+            },
+            {
+                "iU": "https://cdn.outfit7.cn/apps/mth/ttgr-builder-banner/003/003-BilderBanner-zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=98&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242209&s=f87a0fc6ec5f3e1e140c73ec16b64fa5bac4c834",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=98&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242209&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=aaaaa3aeb65768a200c24d5ed2392a4ee8caf6c7",
+                "aU": "https://cdn.outfit7.cn/apk/mth/MyTalkingHank-free-1.5.0.apk",
+                "aI": "com.outfit7.mytalkinghank",
+                "yI": "yard_hank"
+            },
+            {
+                "iU": "https://cdn.outfit7.cn/apps/goldrun/builder-banner/001-ginger-BuilderBanner_zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=350&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242209&s=cf868e615dfcb191c0080546dd3b195c9165e6c8",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=350&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242209&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=de1faf519a34fe2d111f6f6550f96594537f6fbd",
+                "aU": "https://cdn.outfit7.cn/apk/ginger/TalkingGinger-free-2.4.4.apk",
+                "aI": "com.outfit7.talkinggingerfree",
+                "yI": "yard_ginger"
+            },
+            {
+                "iU": "https://cdn.outfit7.cn/apps/goldrun/builder-banner/001-Ben-bilderBanner_zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=351&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242209&s=217e2b02ca524689b2647c426e126474554a023c",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=351&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242209&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=bd5ba131d8c332435c822a5127e9aa5a9786f980",
+                "aU": "https://cdn.outfit7.cn/apk/ben/TalkingBen-free-3.4.3.apk",
+                "aI": "com.outfit7.talkingben",
+                "yI": "yard_ben"
+            },
+            {
+                "iU": "https://cdn.outfit7.cn/apps/goldrun/builder-banner/001-TT2-bilderBanne_zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=349&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242210&s=809b433c53fcac6fefc6dfb9c13f8c028d48bebf",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=349&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242210&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=4c44fd7debd29bd1be11ffcca0c33e4ef05f9ad4",
+                "aU": "https://cdn.outfit7.cn/apk/tom2/TalkingTom2-free-5.2.5.apk",
+                "aI": "com.outfit7.talkingtom2free",
+                "yI": "yard_tom2"
+            },
+            {
+                "iU": "https://cdn.outfit7.cn/apps/goldrun/builder-banner/001-TA-bilderBanner_zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=352&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242210&s=9957ece4ca3c643e835ac9b9e1976170363c4d08",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=352&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242210&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=1658ed21ad65e1197b37c07fec22f98959438476",
+                "aU": "https://cdn.outfit7.cn/apk/angela/TalkingAngela-free-2.7.2.apk",
+                "aI": "com.outfit7.talkingangelafree",
+                "yI": "yard_angela2"
+            },
+            {
+                "iU": "https://cdn.outfit7.cn/apps/mth/ttgr-builder-banner/003/003-BilderBanner-zh.jpg",
+                "imU": "https://apps.outfit7.com/rest/ad/v1/tracking/imp?adId=148&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&pl=android&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&bld=free&os=6.0.1&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&ts=1553667242210&s=396544974edd92cb662b238b01308ffbf7f145da",
+                "cU": "https://apps.outfit7.com/rest/ad/v1/tracking/click?adId=148&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&appId=com.outfit7.talkingtomgoldrun&aV=1.0.0&lc=zh&ns=banner&ts=1553667242210&pl=android&bld=free&os=6.0.1&nR=true&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&gplay=false&s=96c814d22506c6852c94826063fef64887946cd6",
+                "aU": "https://cdn.outfit7.cn/apk/mth/MyTalkingHank-free-1.5.0.apk",
+                "aI": "com.outfit7.mytalkinghank",
+                "yI": "yard_hank2"
+            }
+        ],
+        "ySOSC": {
+            "nOR": 99999,
+            "tSLC": 99999,
+            "nOS": 99999
+        },
+        "wEs": [],
+        "bDs": {
+            "15": {
+                "f": 4,
+                "t": 1
+            },
+            "30": {
+                "f": 3,
+                "t": 0.5
+            },
+            "90": {
+                "f": 2,
+                "t": 0
+            },
+            "96": {
+                "f": 1,
+                "t": -1
+            },
+            "100": {
+                "f": 0,
+                "t": -2
+            }
+        },
+        "cCS": {
+            "nOR": 10,
+            "tSLC": 15
+        },
+        "sWF": 0.6
+    },
+    "gts": 1553667242136,
+    "eAs": [
+        {
+            "id": "com.bemobi.com.outfit7.talkingtom2"
+        },
+        {
+            "id": "com.bemobi.com.outfit7.gingersbirthdayfree"
+        },
+        {
+            "id": "com.bemobi.com.outfit7.talkinggingerfree"
+        },
+        {
+            "id": "com.bemobi.com.outfit7.talkingpierre"
+        },
+        {
+            "id": "com.bemobi.com.outfit7.talkingnews"
+        },
+        {
+            "id": "com.bemobi.com.outfit7.talkingtompro"
+        },
+        {
+            "id": "com.alipay.android.app"
+        },
+        {
+            "id": "anzhi.pad"
+        },
+        {
+            "id": "cn.goapk.market"
+        },
+        {
+            "id": "com.yingyonghui.market"
+        },
+        {
+            "id": "com.tencent.tmgp.com.outfit7.talkingtomgoldrun"
+        },
+        {
+            "id": "com.tencent.tmgp.com.outfit7.talkingtomgoldrun.txjptom"
+        },
+        {
+            "id": "com.mappn.gfan"
+        },
+        {
+            "id": "com.hiapk.marketpho"
+        },
+        {
+            "id": "com.baidu.appsearch"
+        },
+        {
+            "id": "com.xiaomi.market"
+        },
+        {
+            "id": "com.tencent.android.qqdownloader"
+        },
+        {
+            "id": "com.wandoujia.phoenix2"
+        },
+        {
+            "id": "com.diguayouxi"
+        },
+        {
+            "id": "com.tencent.qqappmarket.hd"
+        },
+        {
+            "id": "com.qihoo.appstore"
+        },
+        {
+            "id": "com.vivo.game"
+        },
+        {
+            "id": "com.oppo.market"
+        },
+        {
+            "id": "com.nearme.gamecenter"
+        },
+        {
+            "id": "com.zx.tomsbubbles"
+        },
+        {
+            "id": "com.zhexinit.codinguniverse"
+        }
+    ],
+    "grid": {
+        "fullScreenNewsHtmlUrl": "https://cdn.outfit7.cn/promo-nc/v25/index.html?news=ttb%2Ftired3-s-nobutton%2Cginger2%2Fwhistle-a-blue%2Cjigty%2Fsummer-s-red%2Ctom%2Ficecream-s-red%2Cmtt%2Fjustminigames-s-green&adIds=28969,28655,28707,28712,30418&appId=com.outfit7.talkingtomgoldrun&appVersion=1.0.0&ns=grid&gplay=false&grid=true&lc=zh&lv=12.11.16&wifi=false&platform=android&rpx=false&uid=5JGJp_2TC250r87BFeDlwCbvdgFHqjf8VfatprSxsEJRLrc3umsDXvvWg62ezgiGP9un&ts=1553667242325&w=1080&h=1920&ssc=1.0&ssf=2%2C440&bld=free&containerId=v25,ucb2-alg&os=6.0.1&sc=qTTd,yGzQ,QDyh,xus2,gKjl&si=16Gs,0EVW,mHtP,DjxE,-XtT&button=%E4%B8%8D%EF%BC%8C%E8%B0%A2%E8%B0%A2%0A%E5%85%8D%E8%B4%B9%E7%8E%A9%0A%E5%85%8D%E8%B4%B9%E7%8E%A9%0A%E5%85%8D%E8%B4%B9%E7%8E%A9%0A%E5%85%8D%E8%B4%B9%E7%8E%A9&sId=3629cae0be478a9c69046594728316c40ab24230.1553667242136&wP=false",
+        "timestamp": 1553667242326,
+        "buttons": [
+            "https://cdn.outfit7.cn/button/ttb/btn-ttb-005-brw-60-adv2.png",
+            "https://cdn.outfit7.cn/button/birthday/btn-ginger2-v008-brw-60-adv2.png",
+            "https://cdn.outfit7.cn/button/jigty/btn-jigty-001-brw-60-adv2.png",
+            "https://cdn.outfit7.cn/button/tom/btn-TT-004-brw-60-adv2.png",
+            "https://cdn.outfit7.cn/button/mtt/btn-mtt-v042-brw-60-adv2.png"
+        ]
+    },
+    "asrEnabled": true,
+    "uH": "9bc724f49cdce75c1767665786976cf08ed87fc7",
+    "sDL": {
+        "bUs": [
+            "https://apps2-hk.outfit7.com",
+            "https://apps2.outfit7.com"
+        ],
+        "eUs": [
+            "https://events-api-ea.outfit7.net/rest/data/v2/events"
+        ]
+    },
+    "cIsCs": [],
+    "uD": {
+        "cC": "CN"
+    },
+    "dI": {},
+    "pC": {
+        "aGL": 13,
+        "sCCO": false,
+        "pPU": "https://outfit7.com/privacy/zh-simp/"
+    }
+}

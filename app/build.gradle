@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 35
+    defaultConfig {
+        applicationId "classic.sudoku.puzzle.woodensudoku"//"com.solou.catendless.run"
+        minSdkVersion 23
+        targetSdkVersion 35
+        versionCode 100
+        versionName "0.9.10"
+        multiDexEnabled true
+
+        //  Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713
+        manifestPlaceholders = [
+            parfkaUrl: 'http://gateway-3.hierugo.com',
+            ivy_debug: true,
+            din: true,
+            parfka_appToken: 'ap2750',
+            gms_games_app_id  : "933591439403",
+            google_admob_application_id: 'ca-app-pub-1914768831611213~9137506848',
+            facebook_appId             : '4194345086111116',
+            facebook_clientToken: '003925c73e83fe389581f4111143f16c',
+            applovin_sdk_key           : 'E8pVhU9mykQd3y0TD0Ksoq4vpf_Muat6ifcP9m96UakTWk5klQaWEeQ2IPOA-GHgxu54eEA8pvgKcn2MBdtQGH',
+
+        ]
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../configs/com.mergegames.merge.neverland.keystore')
+            storePassword '123456'
+            keyAlias 'com.mergegames.merge.neverland'
+            keyPassword '123456'
+        }
+        release {
+            storeFile file('../configs/com.mergegames.merge.neverland.keystore')
+            storePassword '123456'
+            keyAlias 'com.mergegames.merge.neverland'
+            keyPassword '123456'
+        }
+    }
+
+    buildTypes {
+        debug {
+//            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled true
+             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+//
+//    lintOptions {
+//        abortOnError false
+//    }
+//
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+namespace "com.mergegames.merge.neverland"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '36.0.0'
+}
+
+dependencies {
+//    api project(':adsfallsdk')
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'com.alibaba:fastjson:1.1.72.android'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+

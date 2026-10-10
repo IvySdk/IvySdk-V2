@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'signing'
+}
+apply {
+    from ('../upload.gradle')
+}
+
+android {
+    namespace 'com.ivy.pangleads'
+    compileSdk rootProject.ext.android.compileSdk
+
+    defaultConfig {
+        minSdk rootProject.ext.android.minSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            debuggable rootProject.ext.buildConfig.debug_debuggable
+//            jniDebuggable rootProject.ext.buildConfig.debug_jniDebuggable
+            minifyEnabled rootProject.ext.buildConfig.debug_minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled rootProject.ext.buildConfig.release_minifyEnabled
+            // shrinkResources rootProject.ext.buildConfig.release_shrinkResources
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    if (!isMavenCentral) {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+            }
+        }
+    }
+}
+
+dependencies {
+    debugApi project(':IvyBase')
+    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    debugApi project(':BlastAds')
+    releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
+    implementation('com.pangle.global:pag-sdk-m:8.4.6.1') {
+        exclude group: 'com.pangle.global', module: 'tiktok-business-android-sdk-comp'
+    }
+    implementation 'com.github.tiktok:tiktok-business-android-sdk:1.7.1'
+    implementation 'com.pangle.global:test-suite:0.2.20'
+
+    implementation rootProject.ext.dependencies.user_messaging_platform
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.13.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+}

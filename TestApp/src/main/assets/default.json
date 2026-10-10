@@ -1,0 +1,1044 @@
+{
+  "ads": {
+    "rules": [
+      {
+        "bx": [
+          "bx_60114_lowram",
+          "bx_60915_lowram_3GB_400",
+          "bx_60915_lowram_3GB_600"
+        ],
+        "ratio": [
+          0.34,
+          0.33,
+          0.33
+        ],
+        "expName": "60915_lowram_3GB",
+        "priority": 1,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                0,
+                3
+              ]
+            },
+            {
+              "key": "low_device",
+              "include": [
+                "yes"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": [
+          "default",
+          "bx_60915_lowram_4GB_400",
+          "bx_60915_lowram_4GB_600"
+        ],
+        "ratio": [
+          0.34,
+          0.33,
+          0.33
+        ],
+        "expName": "60915_lowram_4GB",
+        "priority": 2,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                3,
+                4
+              ]
+            },
+            {
+              "key": "low_device",
+              "include": [
+                "yes"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": "bx_60320_US",
+        "expName": "60915_US",
+        "priority": 3,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                3,
+                -1
+              ]
+            },
+            {
+              "key": "country",
+              "include": [
+                "US"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": [
+          "default",
+          "bx_60114_RU"
+        ],
+        "ratio": [
+          0.5,
+          0.5
+        ],
+        "expName": "60915_RU",
+        "priority": 4,
+        "condition": [
+          [
+            {
+              "key": "country",
+              "include": [
+                "RU"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": "default",
+        "expName": "global",
+        "priority": 5,
+        "condition": [
+          []
+        ]
+      }
+    ],
+    "default": {
+      "inter": [
+        {
+          "adUnit": "c2b0b5696fb716b2",
+          "platform": "max"
+        }
+      ],
+      "abtest": "default",
+      "banner": [
+        {
+          "adUnit": "f733081aa48c7a79",
+          "platform": "max",
+          "amazonSlotId": "9a133289-dd5f-4e35-a817-82c6895a4221"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "b740e8616b61f4f8",
+          "platform": "max"
+        }
+      ]
+    },
+    "platforms": {
+      "aps": {
+        "id": "bc34040a-3fca-4418-b357-b05f60fa4396"
+      },
+      "max": {
+        "sdkKey": "E8pVhU9mykQd3y0TD0Ksoq4vpf_Muat6ifcP9m96UakTWk5klQaWEeQ2IPOA-GHgxu54eEA8pvgKcn2MBdtQGH",
+        "disableB2B": false
+      }
+    },
+    "bx_60114_RU": {
+      "inter": [
+        {
+          "adUnit": "R-M-14602648-49",
+          "platform": "yandex"
+        },
+        {
+          "adUnit": "R-M-14602648-50",
+          "platform": "yandex"
+        },
+        {
+          "adUnit": "R-M-14602648-51",
+          "platform": "yandex"
+        }
+      ],
+      "abtest": "bx_60114_RU",
+      "banner": [
+        {
+          "adUnit": "R-M-14602648-41",
+          "platform": "yandex"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "R-M-14602648-43",
+          "platform": "yandex"
+        }
+      ]
+    },
+    "bx_60114_US": {
+      "inter": [
+        {
+          "adUnit": "8e897fd060519bdd",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "aa1a94649f0c7329",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "a463a26c67d7825b",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "bx_60114_US",
+      "banner": [
+        {
+          "adUnit": "4de333d4682c92b1",
+          "platform": "max",
+          "amazonSlotId": "9a133289-dd5f-4e35-a817-82c6895a4221"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "92997e889ebf3806",
+          "platform": "max"
+        }
+      ]
+    },
+    "bx_60320_US": {
+      "inter": [
+        {
+          "adUnit": "c1ebe14faed6c18d",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "02c726c5d41b3846",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "8205a2d59dd9a1fa",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "bx_60320_US",
+      "banner": [
+        {
+          "adUnit": "4de333d4682c92b1",
+          "platform": "max",
+          "amazonSlotId": "9a133289-dd5f-4e35-a817-82c6895a4221"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "92997e889ebf3806",
+          "platform": "max"
+        }
+      ]
+    },
+    "bx_60421_T1": {
+      "inter": [
+        {
+          "adUnit": "6ef6c990ab91e240",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "2d74ea1b6849483d",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "b6d5ff6807ba4e70",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "bx_60421_T1",
+      "banner": [
+        {
+          "adUnit": "f733081aa48c7a79",
+          "platform": "max",
+          "amazonSlotId": "9a133289-dd5f-4e35-a817-82c6895a4221"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "b740e8616b61f4f8",
+          "platform": "max"
+        }
+      ]
+    },
+    "bx_60421_US": {
+      "inter": [
+        {
+          "adUnit": "c1ebe14faed6c18d",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "02c726c5d41b3846",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "8205a2d59dd9a1fa",
+          "platform": "max",
+          "blockDuration": 0,
+          "maxNofillCount": 99999,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "psm-ivy-ms-android-instl-prod",
+          "platform": "msp",
+          "blockDuration": 0,
+          "maxNofillCount": 99999
+        }
+      ],
+      "abtest": "bx_60421_US",
+      "banner": [
+        {
+          "adUnit": "4de333d4682c92b1",
+          "platform": "max",
+          "amazonSlotId": "9a133289-dd5f-4e35-a817-82c6895a4221"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "92997e889ebf3806",
+          "platform": "max"
+        }
+      ]
+    },
+    "low_devices": [
+      "2015",
+      "RMX2185",
+      "Infinix-X6525D",
+      "TECNO-BG6m",
+      "ellis",
+      "Infinix-X6512",
+      "a02",
+      "itel-A667L",
+      "1904",
+      "HWPOT-H",
+      "1906",
+      "TECNO-KG5j",
+      "a10",
+      "dandelion",
+      "2026",
+      "itel-A669L",
+      "j6primelte",
+      "sabahl",
+      "TECNO-BF6",
+      "Infinix-X6516",
+      "snow",
+      "lima",
+      "ice",
+      "V2236",
+      "RMX2020",
+      "2120",
+      "P963F66",
+      "Infinix-X680",
+      "cloud",
+      "itel-A667LP",
+      "a10s",
+      "Infinix-X657B",
+      "OP4B79L1",
+      "2034",
+      "P963F94",
+      "Infinix-X657C",
+      "Infinix-X6532C",
+      "gta3xlwifi",
+      "P963F95_A",
+      "angelican",
+      "klein",
+      "water",
+      "a01q",
+      "RE58AB",
+      "a03su",
+      "aruba",
+      "OP5321",
+      "Infinix-X6532",
+      "RMX2189",
+      "itel-A6610L",
+      "TECNO-KE5",
+      "angelica",
+      "a20",
+      "OP4F97",
+      "blue",
+      "a20e",
+      "RMX3231",
+      "Infinix-X6511B",
+      "itel-A665L",
+      "a11q",
+      "gta4l",
+      "TECNO-KL4",
+      "a3core",
+      "a04e",
+      "P606F20_A",
+      "1901",
+      "1938",
+      "aether",
+      "borag",
+      "camellian",
+      "capri",
+      "caprip",
+      "citrus",
+      "coful",
+      "curtana",
+      "DQO",
+      "F51B",
+      "F52B",
+      "F52E",
+      "FCG02",
+      "fog",
+      "galahad",
+      "ginkgo",
+      "guamp",
+      "HNALT-Q1",
+      "HNALT-Q2",
+      "HNGFY-M",
+      "HNVNA-M",
+      "HWHRY-H",
+      "Infinix-X6511E",
+      "Infinix-X6515",
+      "Infinix-X6517",
+      "Infinix-X6525B",
+      "Infinix-X6531",
+      "Infinix-X6531B",
+      "Infinix-X665B",
+      "Infinix-X6823C",
+      "Infinix-X688B",
+      "itel-A662LM",
+      "itel-A669W",
+      "itel-C671L",
+      "j6lte",
+      "lancelot",
+      "lavender",
+      "lemon",
+      "lime",
+      "malta",
+      "merlin",
+      "merlinnfc",
+      "OP4883",
+      "OP4EFDL1",
+      "OP4F2F",
+      "OP4F39L1",
+      "OP5353L1",
+      "OP5355",
+      "OP56F5",
+      "OP5759L1",
+      "OP575DL1",
+      "OP5B16L1",
+      "OP5EA7L1",
+      "OP5EEDL1",
+      "OP62A3L1",
+      "penangf",
+      "pond",
+      "rain",
+      "RE549C",
+      "RE5894",
+      "RE58BC",
+      "RE58C2",
+      "RE5C9F",
+      "RE6095",
+      "RE60BA",
+      "RE87BAL1",
+      "river",
+      "RMX3201",
+      "spes",
+      "spesn",
+      "spring",
+      "sunny",
+      "tapas",
+      "TB330FU",
+      "TECNO-BF7",
+      "TECNO-BG7",
+      "TECNO-BG7n",
+      "TECNO-KC8",
+      "tornado",
+      "V2204",
+      "V2207",
+      "V2254",
+      "V2310",
+      "V2333",
+      "willow",
+      "wind",
+      "X306F",
+      "gta7litewifi"
+    ],
+    "bx_60114_lowram": {
+      "inter": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/9621270267",
+          "platform": "admob"
+        }
+      ],
+      "abtest": "bx_60114_lowram",
+      "banner": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/2836370061",
+          "platform": "admob"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/5737865571",
+          "platform": "admob"
+        }
+      ]
+    },
+    "bx_60915_lowram_3GB_400": {
+      "inter": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/9621270267",
+          "platform": "admob"
+        }
+      ],
+      "abtest": "bx_60915_lowram_3GB_400",
+      "banner": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/2836370061",
+          "platform": "admob"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/5737865571",
+          "platform": "admob"
+        }
+      ],
+      "strategy": "new",
+      "adStrategy": {
+        "criticalAvailableMemoryMb": 400
+      }
+    },
+    "bx_60915_lowram_3GB_600": {
+      "inter": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/9621270267",
+          "platform": "admob"
+        }
+      ],
+      "abtest": "bx_60915_lowram_3GB_600",
+      "banner": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/2836370061",
+          "platform": "admob"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/5737865571",
+          "platform": "admob"
+        }
+      ],
+      "strategy": "new",
+      "adStrategy": {
+        "criticalAvailableMemoryMb": 600
+      }
+    },
+    "bx_60915_lowram_4GB_400": {
+      "inter": [
+        {
+          "adUnit": "c2b0b5696fb716b2",
+          "platform": "max"
+        }
+      ],
+      "abtest": "bx_60915_lowram_4GB_400",
+      "banner": [
+        {
+          "adUnit": "f733081aa48c7a79",
+          "platform": "max",
+          "amazonSlotId": "9a133289-dd5f-4e35-a817-82c6895a4221"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "b740e8616b61f4f8",
+          "platform": "max"
+        }
+      ],
+      "strategy": "new",
+      "adStrategy": {
+        "criticalAvailableMemoryMb": 400
+      }
+    },
+    "bx_60915_lowram_4GB_600": {
+      "inter": [
+        {
+          "adUnit": "c2b0b5696fb716b2",
+          "platform": "max"
+        }
+      ],
+      "abtest": "bx_60915_lowram_4GB_600",
+      "banner": [
+        {
+          "adUnit": "f733081aa48c7a79",
+          "platform": "max",
+          "amazonSlotId": "9a133289-dd5f-4e35-a817-82c6895a4221"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "b740e8616b61f4f8",
+          "platform": "max"
+        }
+      ],
+      "strategy": "new",
+      "adStrategy": {
+        "criticalAvailableMemoryMb": 600
+      }
+    }
+  },
+  "gts": 1737538304000,
+  "push": [],
+  "appid": "2750",
+  "token": "5dbced9099e90ad5be87e4625f95448f",
+  "track": {
+    "custom": {
+      "op": {
+        "expr": "1",
+        "count": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "params": [
+          "sdk_app_open|>=0d1"
+        ],
+        "repeat": false
+      },
+      "r10d1_inter_s1": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=1d10",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=1d1"
+        ],
+        "repeat": false
+      },
+      "r20d3_inter_s3": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=3d20",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=3d3"
+        ],
+        "repeat": false
+      },
+      "r30d7_inter_s3": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d30",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=7d3"
+        ],
+        "repeat": false
+      },
+      "ad_purchase_0_1": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.1}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_2": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.2}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_3": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.3}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_4": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.4}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_5": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.5}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_6": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.6}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_7": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.7}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_8": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.8}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_01": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.01}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_03": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.03}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_05": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.05}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_15": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.15}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_18": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.18}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_99": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.99}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "level_10_inter_s1": {
+        "expr": "1&&2",
+        "params": [
+          "normalstart{[level]>10}|>=0d1",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=0d1"
+        ],
+        "repeat": false
+      },
+      "level_30_inter_s2": {
+        "expr": "1&&2",
+        "params": [
+          "normalstart{[level]>30}|>=0d1",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=0d2"
+        ],
+        "repeat": false
+      },
+      "roundstart_10in1day": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=1d10",
+          "af_ad_revenue|>=1d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_10in7day": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d10",
+          "af_ad_revenue|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_15in7day": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d15",
+          "af_ad_revenue|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_20in7day": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d20",
+          "af_ad_revenue|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_25in7day": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d25",
+          "af_ad_revenue|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_30in7day": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d30",
+          "af_ad_revenue|>=7d1"
+        ],
+        "repeat": false
+      },
+      "themechange_inter_s1": {
+        "expr": "1&&2",
+        "params": [
+          "option{[tiles]>0,[background]>0}|>=0d1",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=0d1"
+        ],
+        "repeat": false
+      },
+      "fb_mobile_purchase_0_2": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.2}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "fb_mobile_purchase_0_99": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.99}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "fb_mobile_purchase_1_99": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>1.99}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "fb_mobile_purchase_2_99": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>2.99}|>=3d1"
+        ],
+        "repeat": true
+      },
+      "fb_mobile_purchase_3_99": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>3.99}|>=3d1"
+        ],
+        "repeat": true
+      },
+      "fb_mobile_purchase_4_99": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>4.99}|>=3d1"
+        ],
+        "repeat": true
+      },
+      "fail_3_shuffle_1_inter_s1": {
+        "expr": "1&&2&&3",
+        "params": [
+          "normalgame{[success]=0}|>=0d3",
+          "normalgame{[useshuffle]=1}|>=0d1",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=0d1"
+        ],
+        "repeat": false
+      },
+      "fail_5_shuffle_2_inter_s1": {
+        "expr": "1&&2&&3",
+        "params": [
+          "normalgame{[success]=0}|>=0d5",
+          "normalgame{[useshuffle]++>2}|>=0d1",
+          "sdk_ad_shown{[ad_format]=interstitial}|>=0d1"
+        ],
+        "repeat": false
+      },
+      "interstitial_shown_2_in1day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown{[ad_format]=interstitial}|>=1d2"
+        ],
+        "repeat": false
+      },
+      "interstitial_shown_2_in3day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown{[ad_format]=interstitial}|>=3d2"
+        ],
+        "repeat": false
+      },
+      "roundstart_20in7day_revenue0_1": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d20",
+          "af_ad_revenue{[revenue]++>0.1}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_10in7day_revenue0_01": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d10",
+          "af_ad_revenue{[revenue]++>0.01}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_10in7day_revenue0_02": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d10",
+          "af_ad_revenue{[revenue]++>0.02}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_10in7day_revenue0_03": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d10",
+          "af_ad_revenue{[revenue]++>0.03}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_10in7day_revenue0_05": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d10",
+          "af_ad_revenue{[revenue]++>0.05}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_10in7day_revenue0_07": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d10",
+          "af_ad_revenue{[revenue]++>0.07}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_20in7day_revenue0_05": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d20",
+          "af_ad_revenue{[revenue]++>0.05}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_20in7day_revenue0_08": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d20",
+          "af_ad_revenue{[revenue]++>0.08}|>=7d1"
+        ],
+        "repeat": false
+      },
+      "roundstart_30in7day_revenue0_05": {
+        "expr": "1&&2",
+        "params": [
+          "round_start|>=7d30",
+          "af_ad_revenue{[revenue]++>0.05}|>=7d1"
+        ],
+        "repeat": false
+      }
+    },
+    "orient": {
+      "fb_mobile_purchase_0_2": "0010",
+      "fb_mobile_purchase_0_99": "0010",
+      "fb_mobile_purchase_1_99": "0010",
+      "fb_mobile_purchase_2_99": "0010",
+      "fb_mobile_purchase_3_99": "0010",
+      "fb_mobile_purchase_4_99": "0010"
+    },
+    "platform": {
+      "facebook": {
+        "enableAdPing": true,
+        "enablePurchasePing": true
+      },
+      "firebase": {
+        "enableAdPing": true,
+        "enablePurchasePing": true
+      },
+      "appsflyer": {
+        "app_key": "J6ejjnUP9fMkv29PqBuYzR",
+        "enableAdPing": true,
+        "enablePurchasePing": true,
+        "inviter_template_id": ""
+      },
+      "thinkingData": {
+        "app_key": "2750",
+        "server_url": "https://ev.ivymobile.com/track/event",
+        "enableAdPing": true,
+        "enablePurchasePing": true
+      }
+    },
+    "low_events": [
+      "normalstart",
+      "round_start",
+      "sdk_ad_request",
+      "sdk_ad_loaded",
+      "sdk_ad_triggered",
+      "af_ad_revenue"
+    ]
+  },
+  "v_api": "28",
+  "helper": {},
+  "uacApi": "https://hda2k62cp0.execute-api.us-west-1.amazonaws.com/top_user_advalue",
+  "payment": {
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2jKHQWuzp2ZJiLjjFq5mSN63iKtBoh+D/LBEj2lQjjGdRoDV4K1BayQ8OqhmZf+Ixo64vUjvHH//65u9x5qvwOaeHTLkP9RVad6DZJicbAW/ZBx2nVq1bHvGygkULqiFPEjKIsNxCtgh1a5Vz59OL/mYVDj2s+hzRPGqWB9GcV/m6km7Ov6qyjcLCH4Ep/miPSMbkmVQQhRqUDcGo7duhpqa55qu3F6osRweCPcBh8IoZBQfg6C18hjkKL46qoKoT7f6e+aBrbk1tikFGZrcfSXLOWBQFdIhJZAmZaPW7I4mTur3WGmzcHk9qXg2eR8Z4q/Waf3wXZr2XIUwUvHufwIDAQAB",
+    "checkout": {
+      "1": {
+        "usd": 5.99,
+        "repeat": 1,
+        "feename": "com.mahjongscapes.noads"
+      }
+    }
+  },
+  "gameServices": {
+    "firestore": {},
+    "playGames": {
+      "web_client_id": "327624648156-3a1rca901rg67so0r8nk834l3avld4uc.apps.googleusercontent.com"
+    }
+  },
+  "remoteConfig": {},
+  "adPingThreshold": 0.01,
+  "api.top_user_advalue": "https://hda2k62cp0.execute-api.us-west-1.amazonaws.com/top_user_advalue"
+}

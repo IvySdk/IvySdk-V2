@@ -1,0 +1,33 @@
+[ 
+  
+  "maven {\n  url \"https://maven.columbus.heytapmobi.com/repository/releases/\"\n      credentials {\n  username \"ncommon\"\n password \"c0b08da17e3ec36c3870fed674a0bcb36abc2e20\"   \n}\n }",
+  "maven {\n  url \"https://maven.columbus.heytapmobi.com/repository/maven-public/\"\n  credentials {\n  username \"cmuser\"\n  password \"c0b08da17ery566c3870fed67789bcb36abc2e32\"   \n}\n}",
+  "maven {\n  url \"https://maven.columbus.heytapmobi.com/repository/Releases_ad\"\n    credentials {\n  username \"adUser\"\n  password \"5f83c8812d984d58875fee1614d7f9de\"           \n}\n}",
+  
+  "https://artifactory-external.vkpartner.ru/artifactory/maven-rustore-exposed/",
+  "https://artifactory-external.vkpartner.ru/artifactory/vkid-sdk-android/",
+  "https://artifactory-external.vkpartner.ru/artifactory/maven/",
+  "https://artifactory-external.vkpartner.ru/artifactory/vk-id-captcha/android/",
+
+  "http://10.80.1.9:8081/repository/maven-android-release/",
+  "https://maven.aliyun.com/repository/public",
+  "https://jitpack.io",
+  "https://developer.huawei.com/repo",
+  "https://developer.hihonor.com/repo",
+  "https://artifactory.bidmachine.io/bidmachine",
+  "https://cboost.jfrog.io/artifactory/chartboost-ads/",
+  "https://imobile-maio.github.io/maven",
+  "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea",
+  "https://maven.ogury.co",
+  "https://artifact.bytedance.com/repository/pangle",
+  "https://repo.pubmatic.com/artifactory/public-repos",
+  "https://s3.amazonaws.com/smaato-sdk-releases/",
+  "https://verve.jfrog.io/artifactory/verve-gradle-release",
+  "https://ysonetwork.s3.eu-west-3.amazonaws.com/sdk/android",
+  "https://imobile.github.io/adnw-sdk-android",
+  "https://android-sdk.is.com/",
+  "https://artifact.bytedance.com/repository/pangle/",
+  "https://artifact.bytedance.com/repository/Volcengine/",
+  "https://artifact.taurusx.com/artifactory/taurusx-sdk/",
+  "https://artifacts.applovin.com/android"
+ ]

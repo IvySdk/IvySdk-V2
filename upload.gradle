@@ -1,0 +1,112 @@
+ext {
+    isMavenCentral = "jitpack"
+    mavenGroupId = "io.github.ivysdk"
+    mavenPublishVersion = '1.0.0-test'
+}
+
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+if (isMavenCentral == "jitpack") {
+    /**
+     * 注意事项：
+     * 1. 必须优先上传IvyBase，在MavenCentral管理页面发布成功后再上传其它模块
+     * 2. Core模块必须在其它模块发布成功后方能上传发布
+     * */
+
+    apply plugin: 'maven-publish'
+    mavenGroupId = "com.github.ivysdk"
+    group = mavenGroupId
+    mavenPublishVersion = '10.1.3'
+    version = mavenPublishVersion
+
+    afterEvaluate {
+        publishing {
+            publications {
+                release(MavenPublication) {
+                    from components.release
+                    groupId = mavenGroupId
+                    artifactId = project.name
+                    version = mavenPublishVersion
+                }
+            }
+        }
+    }
+
+//    mavenGroupId = "io.github.ivysdk"
+//    mavenPublishVersion = '10.1.3'
+//    apply plugin: 'com.vanniktech.maven.publish'//放在全局引用会生成多余文件
+//
+//    mavenPublishing {
+//        coordinates(mavenGroupId, project.name, mavenPublishVersion)
+//        pom {
+//            name = project.name
+//            description = "A description of what my library does."
+//            inceptionYear = "2020"
+//            url = "https://github.com/username/mylibrary/"
+//            licenses {
+//                license {
+//                    name = "The Apache License, Version 2.0"
+//                    url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+//                    distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+//                }
+//            }
+//            developers {
+//                developer {
+//                    id = "IvySdk"
+//                    name = "s"
+//                    url = "https://github.com/username/"
+//                }
+//            }
+//            scm {
+//                url = "https://github.com/username/mylibrary/"
+//                connection = "scm:git:git://github.com/username/mylibrary.git"
+//                developerConnection = "scm:git:ssh://git@github.com/username/mylibrary.git"
+//            }
+//        }
+//        signAllPublications()
+//    }
+
+} else {
+    mavenGroupId = "com.rise"
+    def json = new JsonSlurper().parse(rootProject.file("release_info.json"))
+    println(json)
+    mavenPublishVersion = json.version_name
+
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = mavenGroupId
+                artifactId = project.name
+                version = mavenPublishVersion
+                afterEvaluate {
+                    println("Components: " + components*.name)
+                    from components.release
+                }
+            }
+        }
+        repositories {
+            maven {
+                allowInsecureProtocol true
+                url 'http://10.80.1.9:8081/repository/maven-android-release/'
+                credentials {
+                    it.username = "android"
+                    it.password = "abc,123"
+                }
+            }
+//            maven {
+//                name = "Local"
+//                url = layout.buildDirectory.dir('D:\\AndroidProject\\IvySDK\\IvyBase\\aa')
+//                // Specify the local staging repo path in the configuration.
+//            }
+        }
+    }
+}
+
+//\\10.80.1.16\pack_config
+//
+//devuser
+//devuser#46d5a
+
+
+
+

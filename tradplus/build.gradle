@@ -1,0 +1,23 @@
+apply plugin: 'maven-publish'
+configurations.maybeCreate("default")
+def publishArtifact = artifacts.add("default", file("customsdk_ads_1.0.4.aar"))
+publishing {
+    publications {
+        release(MavenPublication){
+            groupId='com.tradplus'
+            artifactId = 'max-mediation'
+            version = '1.0.4'
+            artifact publishArtifact
+        }
+    }
+    repositories {
+        maven {
+            allowInsecureProtocol true
+            url 'http://10.80.1.9:8081/repository/maven-android-release/'
+            credentials {
+                it.username = "android"
+                it.password = "abc,123"
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply plugin: 'maven-publish'
+publishing {
+    publications {
+        release(MavenPublication){
+            groupId='com.adsfall'
+            artifactId = 'googlebannerrefresh'
+            version = '0.0.1' // 0.9.70986 测试af logAdRevenue
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+    repositories {
+        maven {
+            allowInsecureProtocol true
+            url 'http://10.80.1.9:8081/repository/maven-android-release/'
+            credentials {
+                it.username = "android"
+                it.password = "abc,123"
+            }
+        }
+    }
+}
+
+android {
+    namespace 'com.google.android.ads.googlebannerrefresh'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 23
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+}
+
+dependencies {
+
+//    implementation 'androidx.core:core-ktx:1.10.1'
+//    implementation 'androidx.appcompat:appcompat:1.7.0'
+//    implementation 'com.google.android.material:material:1.10.0'
+
+
+    implementation "com.google.android.gms:play-services-ads:23.3.0"
+}

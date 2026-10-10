@@ -1,0 +1,901 @@
+{
+  "ads": {
+    "rules": [
+      {
+        "bx": [
+          "default",
+          "bx_60202_Adwords_High"
+        ],
+        "ratio": [
+          0.5,
+          0.5
+        ],
+        "expName": "googleadwords_US-high",
+        "priority": 1,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                3,
+                -1
+              ]
+            },
+            {
+              "key": "country",
+              "include": [
+                "US"
+              ]
+            },
+            {
+              "key": "media_source",
+              "include": [
+                "googleadwords_int"
+              ]
+            },
+            {
+              "key": "ad_value",
+              "include": [
+                "high"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": [
+          "default",
+          "bx_60202_Adwords_medlow"
+        ],
+        "ratio": [
+          0.5,
+          0.5
+        ],
+        "expName": "googleadwords_US-mediumlow",
+        "priority": 2,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                3,
+                -1
+              ]
+            },
+            {
+              "key": "country",
+              "include": [
+                "US"
+              ]
+            },
+            {
+              "key": "media_source",
+              "include": [
+                "googleadwords_int"
+              ]
+            },
+            {
+              "key": "ad_value",
+              "include": [
+                "medium",
+                "low"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": [
+          "default",
+          "bx_60202_DT_high"
+        ],
+        "ratio": [
+          0.5,
+          0.5
+        ],
+        "expName": "DT_US-high",
+        "priority": 3,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                3,
+                -1
+              ]
+            },
+            {
+              "key": "country",
+              "include": [
+                "US"
+              ]
+            },
+            {
+              "key": "media_source",
+              "include": [
+                "onedigitalturbine_int"
+              ]
+            },
+            {
+              "key": "ad_value",
+              "include": [
+                "high"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": [
+          "default",
+          "bx_60202_DT_medlow"
+        ],
+        "ratio": [
+          0.5,
+          0.5
+        ],
+        "expName": "DT_US-mediumlow",
+        "priority": 4,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                3,
+                -1
+              ]
+            },
+            {
+              "key": "country",
+              "include": [
+                "US"
+              ]
+            },
+            {
+              "key": "media_source",
+              "include": [
+                "onedigitalturbine_int"
+              ]
+            },
+            {
+              "key": "ad_value",
+              "include": [
+                "medium",
+                "low"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": "bx_60202_2GB",
+        "expName": "60202_lawram_2GB",
+        "priority": 5,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                0,
+                2
+              ]
+            },
+            {
+              "key": "low_device",
+              "include": [
+                "yes"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": "bx_60105_lowram",
+        "expName": "60105_lowram",
+        "priority": 6,
+        "condition": [
+          [
+            {
+              "key": "device_ram",
+              "include": [
+                2,
+                3
+              ]
+            },
+            {
+              "key": "low_device",
+              "include": [
+                "yes"
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "bx": "default",
+        "expName": "global",
+        "priority": 7,
+        "condition": [
+          []
+        ]
+      }
+    ],
+    "default": {
+      "inter": [
+        {
+          "adUnit": "1765f199f743a431",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "f8aedc324e3fa4a1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "9259f23715f19be7",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "default",
+      "banner": [
+        {
+          "adUnit": "62b0489028d44015",
+          "platform": "max"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "0dfcef4b6aaad3ca",
+          "platform": "max"
+        }
+      ]
+    },
+    "platforms": {
+      "max": {
+        "sdkKey": "E8pVhU9mykQd3y0TD0Ksoq4vpf_Muat6ifcP9m96UakTWk5klQaWEeQ2IPOA-GHgxu54eEA8pvgKcn2MBdtQGH",
+        "disableB2B": false
+      }
+    },
+    "low_devices": [
+      "WVR_sproutsdddd",
+      "2015",
+      "malta",
+      "1904",
+      "RMX2185",
+      "8505X",
+      "fivestar",
+      "Bee_One",
+      "K7Pro",
+      "Apollo_8_4G_TMO",
+      "MNT",
+      "2044",
+      "IRS",
+      "NEW_10",
+      "RMX3063",
+      "8505F",
+      "TECNO-KG5",
+      "ML_SO0V_M8_4G",
+      "ellis",
+      "1906",
+      "itel-A667L",
+      "channel",
+      "itel-A662L",
+      "2026",
+      "VILLAON-V40",
+      "dandelion",
+      "RMX2021",
+      "ULTRA_Plus",
+      "Infinix-X6511E",
+      "a10",
+      "mdh15lm",
+      "TECNO-BG6m",
+      "Infinix-X6512",
+      "sabahl",
+      "P963F80",
+      "pine",
+      "RMX2020",
+      "a02",
+      "Infinix-X6525D",
+      "RMX1911",
+      "dh0lm",
+      "olivelite",
+      "T770G",
+      "V2217",
+      "TECNO-KG5j",
+      "Infinix-X688C",
+      "2028",
+      "lima",
+      "Luna_8_4G_TMO",
+      "olivewood",
+      "itel-A669L",
+      "HLTE109E_01",
+      "Infinix-X657",
+      "TECNO-BF6",
+      "HLTE243E",
+      "ice",
+      "snow",
+      "Infinix-X6516",
+      "cloud",
+      "angelican",
+      "RMX1821",
+      "itel-A667LP",
+      "TECNO-BE8",
+      "Stratus_C8",
+      "2034",
+      "ML_SO0S_M7_WIFI",
+      "cyprus",
+      "itel-L6502",
+      "HWPOT-H",
+      "borago",
+      "HLTE109E",
+      "BUZZ_7_Lite",
+      "onc",
+      "itel-A661L",
+      "Infinix-X657C",
+      "Infinix-X657B",
+      "snow",
+      "a01core",
+      "maltalsc",
+      "HNVNA-M",
+      "Civic",
+      "RMX2189",
+      "2120",
+      "Multilaser_G_Max_2_SE_64",
+      "OP4B79L1",
+      "P963F66",
+      "P963F95_A",
+      "Rio",
+      "TECNO-KE5",
+      "guamna",
+      "Infinix-X680",
+      "OP5321",
+      "100135923",
+      "aruba",
+      "gtowifi",
+      "Infinix-X6823C",
+      "COS",
+      "OP4F97",
+      "Infinix-X6511B",
+      "NVA",
+      "Flex_2",
+      "a10s",
+      "gto",
+      "meh15lm",
+      "itel-A663L",
+      "Infinix-X6823",
+      "T810",
+      "j4lte",
+      "TECNO-PR651",
+      "Infinix-X612B",
+      "OP4EEA",
+      "klein",
+      "TB300FU",
+      "itel-L6006",
+      "Infinix-PR652B",
+      "RE58AB",
+      "angelica",
+      "water",
+      "mmh4p-pr",
+      "C0175",
+      "Infinix-X6511",
+      "P963F61",
+      "a20",
+      "TR5996",
+      "Lotus",
+      "100135925",
+      "Infinix-X655C",
+      "LS1542QWN",
+      "gta3xlwifi",
+      "V2236",
+      "TECNO-BD4",
+      "fijisc",
+      "P963F06",
+      "P963F07",
+      "P963F62",
+      "Infinix-X6532C",
+      "j6primelte",
+      "P606F01",
+      "a21",
+      "a01q",
+      "gta3xl",
+      "P963F94",
+      "RMX3231",
+      "j6lte",
+      "itel-A6610L",
+      "a11q",
+      "77-EV",
+      "itel-A665L",
+      "blue",
+      "MNR",
+      "a20e",
+      "a03su",
+      "mdh35lm",
+      "m20lte",
+      "HPE",
+      "P606F20_A",
+      "angelicain",
+      "P963F10",
+      "a12u",
+      "Infinix-X6532",
+      "H5032U",
+      "TECNO-KL4",
+      "a20s",
+      "mmh55lm",
+      "a3core",
+      "gta7lite",
+      "a04e",
+      "RE5887",
+      "mmh45lm",
+      "gta4lwifi",
+      "P963F60"
+    ],
+    "bx_60202_2GB": {
+      "inter": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/7645031545",
+          "platform": "admob"
+        }
+      ],
+      "abtest": "bx_60202_2GB",
+      "banner": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/8854171430",
+          "platform": "admob"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "",
+          "platform": "admob"
+        }
+      ]
+    },
+    "bx_60105_lowram": {
+      "inter": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/7645031545",
+          "platform": "admob"
+        }
+      ],
+      "abtest": "bx_60105_lowram",
+      "banner": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/8854171430",
+          "platform": "admob"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "ca-app-pub-1914768831611213/8446977321",
+          "platform": "admob"
+        }
+      ]
+    },
+    "bx_60202_DT_high": {
+      "inter": [
+        {
+          "adUnit": "da12aaa1d00723bd",
+          "segment": "2001:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "3a0b7ccb5ac5c556",
+          "segment": "2002:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "f6382bcd4078f758",
+          "segment": "2003:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "bx_60202_DT_high",
+      "banner": [
+        {
+          "adUnit": "930148e3951f8518",
+          "segment": "2005:1",
+          "platform": "max"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "26ff130aa4282c1e",
+          "segment": "2004:1",
+          "platform": "max"
+        }
+      ]
+    },
+    "bx_60202_DT_medlow": {
+      "inter": [
+        {
+          "adUnit": "da12aaa1d00723bd",
+          "segment": "2001:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "3a0b7ccb5ac5c556",
+          "segment": "2002:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "f6382bcd4078f758",
+          "segment": "2003:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "bx_60202_DT_medlow",
+      "banner": [
+        {
+          "adUnit": "930148e3951f8518",
+          "segment": "2005:1",
+          "platform": "max"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "26ff130aa4282c1e",
+          "segment": "2004:1",
+          "platform": "max"
+        }
+      ]
+    },
+    "bx_60202_Adwords_High": {
+      "inter": [
+        {
+          "adUnit": "28c57d7950f79a7b",
+          "segment": "1001:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "653dc273150a2e4b",
+          "segment": "1002:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "f44ee7eaa77271ff",
+          "segment": "1003:1",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "bx_60202_Adwords_High",
+      "banner": [
+        {
+          "adUnit": "f4652e07119415c8",
+          "segment": "1005:1",
+          "platform": "max"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "d4bc56bf2485c63d",
+          "segment": "1004:1",
+          "platform": "max"
+        }
+      ]
+    },
+    "bx_60202_Adwords_medlow": {
+      "inter": [
+        {
+          "adUnit": "28c57d7950f79a7b",
+          "segment": "1001:2",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "653dc273150a2e4b",
+          "segment": "1002:2",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        },
+        {
+          "adUnit": "f44ee7eaa77271ff",
+          "segment": "1003:2",
+          "platform": "max",
+          "blockDuration": 3,
+          "maxNofillCount": 5,
+          "disableAutoRetry": true
+        }
+      ],
+      "abtest": "bx_60202_Adwords_medlow",
+      "banner": [
+        {
+          "adUnit": "f4652e07119415c8",
+          "segment": "1005:2",
+          "platform": "max"
+        }
+      ],
+      "reward": [
+        {
+          "adUnit": "d4bc56bf2485c63d",
+          "segment": "1004:2",
+          "platform": "max"
+        }
+      ]
+    }
+  },
+  "gts": 1761268238000,
+  "push": [],
+  "appid": 2677,
+  "token": "b77274bc5c04e869c25ec16f55506489",
+  "track": {
+    "custom": {
+      "op": {
+        "expr": "1",
+        "count": [
+          2,
+          3,
+          5,
+          10
+        ],
+        "params": [
+          "sdk_app_open|>=0d1"
+        ],
+        "repeat": false
+      },
+      "d0cnt2": {
+        "expr": "1",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d2"
+        ],
+        "repeat": false
+      },
+      "d1cnt4": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d0",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d4"
+        ],
+        "repeat": false
+      },
+      "d1cnt5": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d0",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d5"
+        ],
+        "repeat": false
+      },
+      "d1cnt6": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d0",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d6"
+        ],
+        "repeat": false
+      },
+      "d1cnt7": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d0",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d7"
+        ],
+        "repeat": false
+      },
+      "d1cnt8": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d0",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d8"
+        ],
+        "repeat": false
+      },
+      "ad_purchase": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.99}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "d1cnt1_d0cnt2": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d2",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d1"
+        ],
+        "repeat": false
+      },
+      "d1cnt2_d0cnt2": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d2",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d2"
+        ],
+        "repeat": false
+      },
+      "d1cnt4_d0cnt3": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d3",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d4"
+        ],
+        "repeat": false
+      },
+      "d1cnt6_d0cnt2": {
+        "expr": "1&&2",
+        "params": [
+          "GameOver,MapGameOver,MapGameWin{[days]=0}|>=1d2",
+          "GameOver,MapGameOver,MapGameWin{[days]=1}|>=2d6"
+        ],
+        "repeat": false
+      },
+      "ad_purchase_0_1": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.1}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_2": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.2}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_3": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.3}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_4": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.4}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_5": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.5}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_6": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.6}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_7": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.7}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "ad_purchase_0_8": {
+        "expr": "1",
+        "params": [
+          "af_ad_revenue{[revenue]++>0.8}|>=0d1"
+        ],
+        "repeat": true
+      },
+      "video_shown_2_in1day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown{[ad_format]=rewarded}|>=1d2"
+        ],
+        "repeat": false
+      },
+      "video_shown_2_in3day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown{[ad_format]=rewarded}|>=3d2"
+        ],
+        "repeat": false
+      },
+      "interstitial_shown_2_in1day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown{[ad_format]=interstitial}|>=1d2"
+        ],
+        "repeat": false
+      },
+      "interstitial_shown_2_in3day": {
+        "expr": "1",
+        "params": [
+          "sdk_ad_shown{[ad_format]=interstitial}|>=3d2"
+        ],
+        "repeat": false
+      }
+    },
+    "orient": {},
+    "platform": {
+      "facebook": {
+        "enableAdPing": true,
+        "enablePurchasePing": true
+      },
+      "firebase": {
+        "enableAdPing": true,
+        "enablePurchasePing": true
+      },
+      "appsflyer": {
+        "app_key": "J6ejjnUP9fMkv29PqBuYzR",
+        "enableAdPing": true,
+        "enablePurchasePing": true,
+        "inviter_template_id": ""
+      }
+    }
+  },
+  "v_api": "8",
+  "domain": "",
+  "helper": {},
+  "uacApi": "https://hda2k62cp0.execute-api.us-west-1.amazonaws.com/top_user_advalue",
+  "payment": {
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkDUUtHu8eyOUOQGBsHV8M0kiz7bhS93HbgZKw0XYpAN1hmniedIRTDGZ5CO0wIHDYFSqjQec40lHpaMFxU2FO4XgfXRTXfNU3M1/vlMKnSNvzLx7aUX7vQrBGjkgAzNEkh8Yk/ElDDua82drLQST/ZVgJbCvnEAWHD7CwUbQJEZODyE4rr4lw6fFqhuplvYhta1rO9JIwovnMmCQeYyj0p6kgLuOFKXcP6Ff7UWJ3Wua2huTlYA2pfOYELuoFq2FdINbRoa3QBq7lIQSBhRTnpqyuciBn3uFWWBAfCW/edJ/PjXpZTrWBpAypReYz+jd8P0D09PH13BhmnZhd/b36wIDAQAB",
+    "checkout": {
+      "100": {
+        "usd": 4.99,
+        "repeat": 1,
+        "feename": "com.colorblock100"
+      }
+    }
+  },
+  "gameServices": {
+"firebase": {}
+  },
+  "remoteConfig": {
+    "mapBegin": 2,
+    "new_version": 1,
+    "reviveBegin": 4,
+    "timeInterval": 60,
+    "unlockscreen": false,
+    "isUseBBAMModel": true,
+    "mapgameOverAds": 60,
+    "mapreviveBegin": 3,
+    "reviveNoThanks": false,
+    "interfaceBanner": true,
+    "gameOverAdsBegin": 6,
+    "isOpenDefaultShape": false,
+    "isShowMapBeginForm": false,
+    "reviveScorePercent": 85,
+    "isOpenNoAdsDiscount": false,
+    "isUse2000SimpleMode": true,
+    "mapgameOverAdsBegin": 3,
+    "isVibrateDefaultOpen": false,
+    "isPlaySoundPointCombo": false
+  }
+}

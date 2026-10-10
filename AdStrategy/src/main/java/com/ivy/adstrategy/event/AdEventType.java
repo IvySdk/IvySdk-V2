@@ -1,0 +1,17 @@
+package com.ivy.adstrategy.event;
+
+public enum AdEventType {
+  TICK,
+  APP_FOREGROUND,
+  APP_BACKGROUND,
+  MEMORY_PRESSURE,
+  SCENE_CHANGED,
+  LOAD_STARTED,
+  LOAD_SUCCESS,
+  LOAD_FAILED,
+  SHOW_STARTED,
+  SHOW_FINISHED,
+  AD_RELEASED,
+  SLOT_DISABLED,
+  SLOT_ENABLED
+}

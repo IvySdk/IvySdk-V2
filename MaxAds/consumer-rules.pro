@@ -1,0 +1,4 @@
+-keep class * implements com.ivy.base.IUnProguard
+-keep public class com.tradplus.** { *; }
+-keep class com.tradplus.ads.** { *; }
+-keep class com.applovin.mediation.adapters.** {*;}

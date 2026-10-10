@@ -1,0 +1,765 @@
+{
+  "adPlatform": {
+    "admobnext": {
+      "AppLovin": [
+        {
+          "url": "com.google.ads.mediation:applovin:13.6.2.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "Chartboost": [
+        {
+          "url": "com.google.ads.mediation:chartboost:9.12.0.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "fyber": [
+        {
+          "url": "com.google.ads.mediation:fyber:8.4.5.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "i-mobile": [
+        {
+          "url": "com.google.ads.mediation:imobile:2.3.2.3",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "inmobi": [
+        {
+          "url": "com.google.ads.mediation:inmobi:11.3.0.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "ironSource": [
+        {
+          "url": "com.google.ads.mediation:ironsource:9.4.2.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "vungle": [
+        {
+          "url": "com.google.ads.mediation:vungle:7.7.4.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "line": [
+        {
+          "url": "com.google.ads.mediation:line:3.1.0.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "maio": [
+        {
+          "url": "com.google.ads.mediation:maio:2.0.8.2",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "facebook": [
+        {
+          "url": "com.google.ads.mediation:facebook:6.21.0.3",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "Mintegral": [
+        {
+          "url": "com.google.ads.mediation:mintegral:17.1.61.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "moloco": [
+        {
+          "url": "com.google.ads.mediation:moloco:4.8.1.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "mytarget": [
+        {
+          "url": "com.google.ads.mediation:mytarget:5.45.3.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "pangle": [
+        {
+          "url": "com.google.ads.mediation:pangle:8.0.0.5.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "pubmatic": [
+        {
+          "url": "com.google.ads.mediation:pubmatic:5.1.2.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ],
+      "unity": [
+        {
+          "url": "com.unity3d.ads:unity-ads:4.18.0",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.google.ads.mediation:unity:4.18.0.0",
+          "type": "",
+          "options": "exclude group: 'com.google.android.gms', module: 'play-services-ads';    exclude group: 'com.google.android.gms', module: 'play-services-ads-lite'"
+        }
+      ]
+    },
+    "admob": {
+      "AppLovin": [
+        {
+          "url": "com.google.ads.mediation:applovin:13.5.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "Chartboost": [
+        {
+          "url": "com.google.ads.mediation:chartboost:9.10.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "fyber": [
+        {
+          "url": "com.google.ads.mediation:fyber:8.4.0.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "i-mobile": [
+        {
+          "url": "com.google.ads.mediation:imobile:2.3.2.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "inmobi": [
+        {
+          "url": "com.google.ads.mediation:inmobi:11.1.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "ironSource": [
+        {
+          "url": "com.google.ads.mediation:ironsource:9.1.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "vungle": [
+        {
+          "url": "com.google.ads.mediation:vungle:7.6.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "line": [
+        {
+          "url": "com.google.ads.mediation:line:2.9.20251028.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "maio": [
+        {
+          "url": "com.google.ads.mediation:maio:2.0.7.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "facebook": [
+        {
+          "url": "com.google.ads.mediation:facebook:6.21.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "Mintegral": [
+        {
+          "url": "com.google.ads.mediation:mintegral:17.0.31.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "pangle": [
+        {
+          "url": "com.google.ads.mediation:pangle:7.7.0.2.0",
+          "type": "",
+          "options": "exclude group:\"com.pangle.global\", module:\"pag-sdk\""
+        }
+      ],
+      "unity": [
+        {
+          "url": "com.unity3d.ads:unity-ads:4.16.6",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.google.ads.mediation:unity:4.16.6.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "google-ad-manager": [
+        {
+          "url": "com.rise:AdmobAdManager:$sdk_ver",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "admob-aps": [
+        {
+          "url": "com.rise:AdmobAps:$sdk_ver",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "moloco": [
+        {
+          "url": "com.google.ads.mediation:moloco:4.2.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "pubmatic": [
+        {
+          "url": "com.google.ads.mediation:pubmatic:4.11.0.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "bidmachine": [
+        {
+          "url": "com.google.ads.mediation:bidmachine:3.5.1.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "adsurge": [
+        {
+          "url": "com.adsurge.sdk:adapter-for-admob:1.9.0.0",
+          "type": "",
+          "options": ""
+        }
+      ]
+    },
+    "max": {
+      "aps": [
+        {
+          "url": "com.applovin.mediation:amazon-tam-adapter:11.1.1.0",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.amazon.android:aps-sdk:11.1.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "bidmachine": [
+        {
+          "url": "com.applovin.mediation:bidmachine-adapter:3.5.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "bigoads": [
+        {
+          "url": "com.applovin.mediation:bigoads-adapter:5.6.2.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "chartboost": [
+        {
+          "url": "com.applovin.mediation:chartboost-adapter:9.10.2.0",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.google.android.gms:play-services-base:16.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "fyber": [
+        {
+          "url": "com.applovin.mediation:fyber-adapter:8.4.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "admob": [
+        {
+          "url": "com.applovin.mediation:google-adapter:25.2.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "google-ad-manager": [
+        {
+          "url": "com.applovin.mediation:google-ad-manager-adapter:25.2.0.0",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.google.android.gms:play-services-base:16.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "hyprmx": [
+        {
+          "url": "com.applovin.mediation:hyprmx-adapter:6.4.2.3",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "inmobi": [
+        {
+          "url": "com.applovin.mediation:inmobi-adapter:11.1.0.0",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.squareup.picasso:picasso:2.8",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "androidx.recyclerview:recyclerview:1.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "ironsource": [
+        {
+          "url": "com.applovin.mediation:ironsource-adapter:9.1.0.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "vungle": [
+        {
+          "url": "com.applovin.mediation:vungle-adapter:7.6.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "line": [
+        {
+          "url": "com.applovin.mediation:line-adapter:2025.10.28.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "maio": [
+        {
+          "url": "com.applovin.mediation:maio-adapter:2.0.4.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "facebook": [
+        {
+          "url": "com.applovin.mediation:facebook-adapter:6.21.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "mintegral": [
+        {
+          "url": "com.applovin.mediation:mintegral-adapter:17.0.31.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "mobilefuse": [
+        {
+          "url": "com.applovin.mediation:mobilefuse-adapter:1.9.3.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "moloco": [
+        {
+          "url": "com.applovin.mediation:moloco-adapter:4.7.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "ogury": [
+        {
+          "url": "com.applovin.mediation:ogury-presage-adapter:6.2.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "pangle": [
+        {
+          "url": "com.pangle.global:pag-sdk-m:7.8.8.1",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.applovin.mediation:bytedance-adapter:7.8.0.7.0",
+          "type": "",
+          "options": "exclude group:\"com.pangle.global\", module:\"pag-sdk\""
+        }
+      ],
+      "pubmatic": [
+        {
+          "url": "com.applovin.mediation:pubmatic-adapter:4.10.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "smaato": [
+        {
+          "url": "com.applovin.mediation:smaato-adapter:22.7.2.3",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "unityads": [
+        {
+          "url": "com.applovin.mediation:unityads-adapter:4.18.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "verve": [
+        {
+          "url": "com.applovin.mediation:verve-adapter:3.7.1.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "yandex": [
+        {
+          "url": "com.applovin.mediation:yandex-adapter:7.17.0.0",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "yso": [
+        {
+          "url": "com.applovin.mediation:yso-network-adapter:1.2.7.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "taurusx": [
+        {
+          "url": "com.applovin.mediation:taurusXAdapters:1.6.3.1",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "com.taurusx.tax:ads:1.12.3",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "maticoo": [
+        {
+          "url": "io.github.maticooads:maticoo-adapter-max:1.1.2",
+          "type": "",
+          "options": ""
+        },
+        {
+          "url": "io.github.maticooads:maticoo-android-sdk:1.8.6.3",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "adsurge": [
+        {
+          "url": "com.adsurge.sdk:adapter-for-max:1.9.0.0",
+          "type": "",
+          "options": ""
+        }
+      ]
+    },
+    "cloudX": {
+      "facebook": [
+        {
+          "url": "io.cloudx:adapter-meta:2.2.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "vungle": [
+        {
+          "url": "io.cloudx:adapter-vungle:2.2.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "inmobi": [
+        {
+          "url": "io.cloudx:adapter-inmobi:2.2.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "unity": [
+        {
+          "url": "io.cloudx:adapter-unity:2.2.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "mintegral": [
+        {
+          "url": "io.cloudx:adapter-mintegral:2.2.1",
+          "type": "",
+          "options": ""
+        }
+      ],
+      "vk_ad": [
+        {
+          "url": "com.applovin.mediation:mytarget-adapter:5.27.4.0",
+          "type": "",
+          "options": ""
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "Core": [
+      {
+        "url": "com.rise:Core:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "Appsflyer": [
+      {
+        "url": "com.rise:Appsflyer:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "Firebase": [
+      {
+        "url": "com.rise:Firebase:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "thinkingsdk": [
+      {
+        "url": "com.rise:ThinkingData:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "Facebook": [
+      {
+        "url": "com.rise:Facebook:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "AIHelp": [
+      {
+        "url": "com.rise:AIHelp:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "IvyAds": [
+      {
+        "url": "com.rise:IvyAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "PangleAds": [
+      {
+        "url": "com.rise:PangleAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "AdmobNextAds": [
+      {
+        "url": "com.rise:AdmobNextAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "BlastAds": [
+      {
+        "url": "com.rise:BlastAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "GooglePay": [
+      {
+        "url": "com.rise:GooglePay:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "PlayGames": [
+      {
+        "url": "com.rise:PlayGames:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "OneStore": [
+      {
+        "url": "com.rise:OneStore:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "Admob": [
+      {
+        "url": "com.rise:Admob:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "Max": [
+      {
+        "url": "com.rise:Max:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "Yandex": [
+      {
+        "url": "com.rise:Yandex:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "FacebookBK3": [
+      {
+        "url": "com.rise:FacebookBK3:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "AdmobAds": [
+      {
+        "url": "com.rise:AdmobAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "XiaomiAds": [
+      {
+        "url": "com.rise:XiaomiAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "AdStrategy": [
+      {
+        "url": "com.rise:AdStrategy:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "MaxAds": [
+      {
+        "url": "com.rise:MaxAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "MspAds": [
+      {
+        "url": "com.rise:MspAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "YandexAds": [
+      {
+        "url": "com.rise:YandexAds:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "CloudXAds": [
+      {
+        "url": "com.rise:CloudX:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ],
+    "Axon": [
+      {
+        "url": "com.rise:Axon:$sdk_ver",
+        "type": "",
+        "options": ""
+      }
+    ]
+  },
+  "plugins": {
+    "classic": [
+      {
+        "path": "com.android.tools.build:gradle:8.5.1",
+        "require": true
+      },
+      {
+        "path": "com.google.gms:google-services:4.3.13",
+        "require": false
+      },
+      {
+        "path": "com.google.firebase:firebase-crashlytics-gradle:2.9.9",
+        "require": false
+      }
+    ],
+    "pad": [
+      {
+        "path": "com.android.application",
+        "version": "8.5.0",
+        "require": true
+      },
+      {
+        "path": "com.android.library",
+        "version": "8.5.0",
+        "require": true
+      },
+      {
+        "path": "org.jetbrains.kotlin.android",
+        "version": "2.1.0",
+        "require": false
+      },
+      {
+        "path": "com.google.gms.google-services",
+        "version": "4.4.2",
+        "require": false
+      },
+      {
+        "path": "com.google.firebase.crashlytics",
+        "version": "3.0.2",
+        "require": false
+      }
+    ]
+  }
+}

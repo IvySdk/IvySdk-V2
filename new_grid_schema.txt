@@ -1,0 +1,87 @@
+{
+    // 网格文件请求时间，
+    “gts”: timestamp,
+    // 网格服务器列表
+    “hpl”: “http://localhost”,
+    // 事件服务器地址
+    "eventurl": "",
+    // 下次需要更新这个grid的时间
+    "nextGridTs: 333333,
+    // 更新banner条，暂不用
+    "updateBanner": {},
+    // 全屏广告超时设置, 
+    "interstitialTimeout": {}
+
+    // banner广告组
+    "banner": [
+        {
+            "id": "唯一的识别符"
+            "provider" : "admob",
+            "placement": "ca-app-pub-7772840788033783/9020446494"
+            "tag" : ["passlevel", "gameover"]
+        }
+    ],
+
+    // 全屏广告组
+    "full": [
+
+    ],
+
+    // 激励视频广告组
+    "video": {
+
+    },
+
+    // 一坨的广告设置可以直接写在这里
+    "adLoadTimeout":10,
+    "adRefreshInterval":20,
+    "adProviderWeights":[
+        0,
+        0
+    ],
+
+    "adParallelRequests":1,
+    "adParallelWaitTime":5,
+    "dontShowFullPageAdsOnSlowConnection": false,
+    "adFullScreenTimespan": 120,
+    "adNextLoadInterval": 15,
+    "timeToWaitForAdToShowSeconds": 5,
+    "adDelayFirstInterstitialCallSec":30,
+    "adProvidersRefreshInMinutes":60,
+    "useVideoClipPreloading":true,
+    "interstitialLoadTimeoutSeconds": 10,
+    "bannerLoadTimeSecond" : 15,
+
+    // 服务器通过客户端请求IP检测的用户
+    "ip":"36.7.84.7",
+    "clientCountryCode":"CN",
+
+    // 是否第一次安装
+    "firstInstall":false,
+    "subscribedPush":false,
+
+    // 内购配置
+    "iap": [
+
+    ],
+    // 事件开关组,可以通过grid文件配置客户端的事件开关
+    "activeEventGroups":[
+        "ads",
+        "ads-show",
+        "connectivity",
+        "user-info",
+        "download-yard",
+        "error",
+        "notification-remote",
+        "game-info"
+    ],
+    // 当前grid的生成时间戳
+    "gts": 1553045638235,
+    "ext": {
+        // remote config配置对当前用户生效的远程配置，grid server会针对特定用户设定特定的配置数据, firebase remote config比较不方便
+        "remoteconfig": {
+
+        }
+
+    }    
+}

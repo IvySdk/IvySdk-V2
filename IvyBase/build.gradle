@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'signing'
+}
+apply {
+    from ('../upload.gradle')
+}
+android {
+    namespace 'com.ivy.base'
+    compileSdk rootProject.ext.android.compileSdk
+
+    defaultConfig {
+        minSdk rootProject.ext.android.minSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            debuggable rootProject.ext.buildConfig.debug_debuggable
+//            jniDebuggable rootProject.ext.buildConfig.debug_jniDebuggable
+            minifyEnabled rootProject.ext.buildConfig.debug_minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled rootProject.ext.buildConfig.release_minifyEnabled
+            // shrinkResources rootProject.ext.buildConfig.release_shrinkResources
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    if (!isMavenCentral) {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+            }
+        }
+    }
+    buildFeatures {
+        buildConfig = true
+        aidl = true
+    }
+}
+
+dependencies {
+    api "androidx.core:core:1.13.1"
+    api "com.google.android.material:material:1.12.0"
+    api rootProject.ext.dependencies.androidx_appcompat
+    api rootProject.ext.dependencies.constraintlayout
+    api rootProject.ext.dependencies.inapp_review
+    api rootProject.ext.dependencies.ads_identifier
+    api rootProject.ext.dependencies.play_services_base
+    api rootProject.ext.dependencies.androidx_work_runtime
+    api rootProject.ext.dependencies.mmkv
+    api rootProject.ext.dependencies.brotli_dec
+    api rootProject.ext.dependencies.fastjson
+    api "androidx.lifecycle:lifecycle-process:2.7.0"
+//    api rootProject.ext.dependencies.immersionbar
+//    implementation 'androidx.appcompat:appcompat:1.7.0'
+//    api 'com.google.android.play:review:2.0.2'
+//    api "com.google.android.gms:play-services-ads-identifier:18.0.1"
+//    api "com.google.android.gms:play-services-base:16.1.0"
+//    api "androidx.work:work-runtime:2.7.0"
+    api(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
+    // define any required OkHttp artifacts without version
+    api("com.squareup.okhttp3:okhttp")
+    api("com.squareup.okhttp3:logging-interceptor")
+//
+//    implementation 'com.tencent:mmkv:1.3.14'
+//    implementation "org.brotli:dec:0.1.2"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">Adsfall Demo</string>
+    <string name="test_icon" translatable="false">test_icon</string>
+    <string name="test_icon_2" translatable="false">test_icon_2</string>
+</resources>

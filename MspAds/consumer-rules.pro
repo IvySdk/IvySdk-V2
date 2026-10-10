@@ -1,0 +1,2 @@
+-keep class com.particles.** { *; }
+-keep class * implements com.ivy.base.IUnProguard

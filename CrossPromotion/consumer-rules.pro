@@ -1,0 +1,5 @@
+-keep class com.ivy.crosspromotion.CrossPromoFullscreenActivity { *; }
+-keep class com.ivy.ads.PromotionInit { public <init>(); *; }
+-keep class com.ivy.ads.PromotionInterstitialAd { public <init>(); *; }
+-keep class com.ivy.ads.PromotionRewardedAd { public <init>(); *; }
+-keep class com.ivy.ads.PromotionBannerAd { public <init>(); *; }
