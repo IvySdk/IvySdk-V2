@@ -37,8 +37,8 @@ android {
 }
 
 dependencies {
-    debugApi project(':BlastAds')
-    releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
+    api project(':BlastAds')
+    // releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.af_android_sdk
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.json:json:20240303'

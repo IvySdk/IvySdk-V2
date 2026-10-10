@@ -46,10 +46,10 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
-    debugApi project(':BlastAds')
-    releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':BlastAds')
+    // releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
     implementation('com.pangle.global:pag-sdk-m:8.4.6.1') {
         exclude group: 'com.pangle.global', module: 'tiktok-business-android-sdk-comp'
     }

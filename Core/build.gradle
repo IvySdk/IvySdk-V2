@@ -52,14 +52,14 @@ dependencies {
 //    implementation "com.android.installreferrer:installreferrer:2.2"
 //    implementation "com.bytedance.applog:RangersAppLog-Lite-global:6.17.1"
 
-    debugApi project(':IvyGames')
-    releaseApi("$mavenGroupId:IvyGames:$mavenPublishVersion")
-    debugApi project(':IvyRemoteConfig')
-    releaseApi("$mavenGroupId:IvyRemoteConfig:$mavenPublishVersion")
-    debugApi project(':IvyTrack')
-    releaseApi("$mavenGroupId:IvyTrack:$mavenPublishVersion")
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':IvyGames')
+    // releaseApi("$mavenGroupId:IvyGames:$mavenPublishVersion")
+    api project(':IvyRemoteConfig')
+    // releaseApi("$mavenGroupId:IvyRemoteConfig:$mavenPublishVersion")
+    api project(':IvyTrack')
+    // releaseApi("$mavenGroupId:IvyTrack:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
 
     implementation rootProject.ext.dependencies.androidx_appcompat
     implementation rootProject.ext.dependencies.constraintlayout

@@ -46,10 +46,10 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
-    debugApi project(':BlastAds')
-    releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':BlastAds')
+    // releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.admob
     implementation("com.adsurge.sdk:adapter-for-admob:1.9.1.0")
     //implementation "com.adsurge.sdk:adn-integration-assistant:1.9.9"

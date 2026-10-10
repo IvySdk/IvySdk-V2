@@ -46,12 +46,12 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
-    debugApi project(':Core')
-    releaseApi("$mavenGroupId:Core:$mavenPublishVersion")
-    debugApi project(':BlastAds')
-    releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':Core')
+    // releaseApi("$mavenGroupId:Core:$mavenPublishVersion")
+    api project(':BlastAds')
+    // releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.yandex
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.material:material:1.13.0'

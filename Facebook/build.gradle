@@ -46,8 +46,8 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.androidx_appcompat
     implementation "com.facebook.android:facebook-android-sdk:$rootProject.ext.facebook.facebook_version"
 

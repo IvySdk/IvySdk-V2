@@ -45,8 +45,8 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.androidx_appcompat
 
     implementation 'androidx.browser:browser:1.5.0'

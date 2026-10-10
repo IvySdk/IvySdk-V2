@@ -46,10 +46,10 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
-    debugApi project(':BlastAds')
-    releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':BlastAds')
+    // releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.cloudX
 //    implementation rootProject.ext.dependencies.adapter_cloudx
     implementation rootProject.ext.dependencies.user_messaging_platform

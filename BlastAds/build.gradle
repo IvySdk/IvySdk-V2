@@ -45,12 +45,12 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
-    debugApi project(':AdStrategy')
-    releaseApi("$mavenGroupId:AdStrategy:$mavenPublishVersion")
-    debugApi project(':IvyRemoteConfig')
-    releaseApi("$mavenGroupId:IvyRemoteConfig:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':AdStrategy')
+    // releaseApi("$mavenGroupId:AdStrategy:$mavenPublishVersion")
+    api project(':IvyRemoteConfig')
+    // releaseApi("$mavenGroupId:IvyRemoteConfig:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.androidx_appcompat
     implementation 'com.google.android.material:material:1.12.0'
     testImplementation 'junit:junit:4.13.2'

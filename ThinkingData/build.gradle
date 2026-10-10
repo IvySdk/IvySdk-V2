@@ -49,6 +49,6 @@ dependencies {
     implementation rootProject.ext.dependencies.androidx_appcompat
     implementation 'cn.thinkingdata.android:TDCore:1.0.3'
 
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
 }

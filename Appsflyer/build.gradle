@@ -47,8 +47,8 @@ android {
 
 dependencies {
     implementation 'androidx.media3:media3-common:1.1.1'
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.androidx_appcompat
     implementation rootProject.ext.dependencies.af_android_sdk
     implementation rootProject.ext.dependencies.installreferrer

@@ -48,10 +48,10 @@ android {
 var mspSdkVersion = "3.6.1"
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
-    debugApi project(':BlastAds')
-    releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':BlastAds')
+    // releaseApi("$mavenGroupId:BlastAds:$mavenPublishVersion")
     implementation ("ai.themsp:facebook-adapter:$mspSdkVersion")
     implementation ("ai.themsp:nova-adapter:$mspSdkVersion")
     implementation ("ai.themsp:google-adapter:$mspSdkVersion"){

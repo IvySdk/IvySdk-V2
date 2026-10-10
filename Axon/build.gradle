@@ -46,8 +46,8 @@ android {
 }
 
 dependencies {
-    debugApi project(':IvyBase')
-    releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
+    api project(':IvyBase')
+    // releaseApi("$mavenGroupId:IvyBase:$mavenPublishVersion")
     implementation rootProject.ext.dependencies.androidx_appcompat
     implementation (rootProject.ext.dependencies.max_axon)
 //    implementation rootProject.ext.dependencies.max
