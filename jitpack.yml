@@ -1,2 +1,6 @@
 jdk:
   - openjdk17
+
+install:
+  # 强制 Gradle 使用本地项目依赖来解析 :IvyBase 等模块
+  - ./gradlew :IvyBase:publishToMavenLocal :AdStrategy:publishToMavenLocal :IvyRemoteConfig:publishToMavenLocal :IvyGames:publishToMavenLocal :IvyTrack:publishToMavenLocal :Core:publishToMavenLocal :BlastAds:publishToMavenLocal --stacktrace
