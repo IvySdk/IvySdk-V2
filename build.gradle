@@ -4,12 +4,12 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+         maven { url 'https://www.jitpack.io' }
         gradlePluginPortal()
-        maven {
-            allowInsecureProtocol true
-            url "http://10.80.1.9:8081/repository/maven-android-release/"
-        }
-        maven { url 'https://www.jitpack.io' }
+        // maven {
+        //     allowInsecureProtocol true
+        //     url "http://10.80.1.9:8081/repository/maven-android-release/"
+        // }
         maven { url 'https://jitpack.io' }
         maven { url 'https://android-sdk.is.com/' }
         maven { url "https://s3.amazonaws.com/smaato-sdk-releases/" }
@@ -54,12 +54,13 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+         maven { url 'https://www.jitpack.io' }
         gradlePluginPortal()
-        maven {
-            allowInsecureProtocol true
-            url "http://10.80.1.9:8081/repository/maven-android-release/"
-        }
-        maven { url 'https://www.jitpack.io' }
+        // maven {
+        //     allowInsecureProtocol true
+        //     url "http://10.80.1.9:8081/repository/maven-android-release/"
+        // }
+       
         maven { url 'https://jitpack.io' }
         maven { url 'https://android-sdk.is.com/' }
         maven { url "https://s3.amazonaws.com/smaato-sdk-releases/" }

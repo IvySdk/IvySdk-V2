@@ -14,9 +14,9 @@ if (isMavenCentral) {
      * */
 
     apply plugin: 'maven-publish'
-    mavenGroupId = "com.github.ivysdk"
+    mavenGroupId = "com.github.IvySdk"
     group = mavenGroupId
-    mavenPublishVersion = '10.1.7'
+    mavenPublishVersion = '10.1.9'
     version = mavenPublishVersion
 
     afterEvaluate {
