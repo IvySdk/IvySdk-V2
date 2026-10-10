@@ -1,12 +1,12 @@
 ext {
-    isMavenCentral = "jitpack"
+    isMavenCentral = true
     mavenGroupId = "io.github.ivysdk"
     mavenPublishVersion = '1.0.0-test'
 }
 
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
-if (isMavenCentral == "jitpack") {
+if (isMavenCentral) {
     /**
      * 注意事项：
      * 1. 必须优先上传IvyBase，在MavenCentral管理页面发布成功后再上传其它模块
